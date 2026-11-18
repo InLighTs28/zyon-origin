@@ -2,18 +2,21 @@
 
 First public beta.
 
-### New: timer HUD
-A column of timers on the **left of the screen**, one line per running timer (icon, segmented gauge, seconds left). Lines only appear while their timer runs, and **blink** just before it ends.
+### Timers in the reticle
+Every cooldown and timer now lives **in the reticle**, so the crosshair alone tells you the state of the network:
 
-- **Core lock**: abilities sealed after the Oath.
-- **Oath**: time left with the network unbound.
-- **Pulse**: active duration, then its **recharge** (from tier 5). A white flash and a chime tell you when it is ready again.
-- **Charged hand**: seal (cyan) or shatter (orange), time before the charge is lost.
-- **Incident**: spike (amber) or intrusion (red), time left to answer it.
-- **Drift**: Sync at 0%, countdown before drift (red once drifting).
-- **Weakest seal**: shown under 30 s, before it fades.
-- **Essence kept** after a shatter.
+- **Outer ring**: main timer. Pulse (gold), then its **recharge** (cyan, from tier 5), Oath (violet), core lock (red). A **white flash** and a chime tell you when Pulse is ready again.
+- **Arc ↖**: charged hand, seal (cyan) / shatter (orange), then **Essence kept** (yellow).
+- **Arc ↗**: incident to answer, spike (amber) / intrusion (red).
+- **Arc ↙**: Sync at 0%, countdown before drift (red once drifting).
+- **Arc ↘**: weakest seal, during its last 30 s.
 
-The origin's **HUD** power has a new tooltip explaining each timer icon.
+Arcs empty clockwise and **blink** just before they run out. The HUD power's diagram and legend show every element (new marks C to F).
+
+### Compatibility & performance
+- Seal rings now use their own item model base, so they no longer clash with other packs that retexture `leather_horse_armor` (rings already placed are converted automatically).
+- Rings that ride their bearer no longer scan every entity each tick.
+- The Siphon "drained" countdown runs once per second instead of every tick.
+- About 150 unused legacy files removed (old French versions of functions and powers).
 
 Requires the **ZyoN - Resources** pack of the same version.

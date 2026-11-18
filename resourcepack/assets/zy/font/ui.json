@@ -181,83 +181,38 @@
     },
     {
       "type": "bitmap",
-      "file": "zy:font/ui/chrono_lock.png",
-      "height": 9,
-      "ascent": 8,
+      "file": "zy:font/ui/tag_11.png",
+      "height": 8,
+      "ascent": 7,
       "chars": [
-        ""
+        ""
       ]
     },
     {
       "type": "bitmap",
-      "file": "zy:font/ui/chrono_oath.png",
-      "height": 9,
-      "ascent": 8,
+      "file": "zy:font/ui/tag_12.png",
+      "height": 8,
+      "ascent": 7,
       "chars": [
-        ""
+        ""
       ]
     },
     {
       "type": "bitmap",
-      "file": "zy:font/ui/chrono_pulse.png",
-      "height": 9,
-      "ascent": 8,
+      "file": "zy:font/ui/tag_13.png",
+      "height": 8,
+      "ascent": 7,
       "chars": [
-        ""
+        ""
       ]
     },
     {
       "type": "bitmap",
-      "file": "zy:font/ui/chrono_pcd.png",
-      "height": 9,
-      "ascent": 8,
+      "file": "zy:font/ui/tag_14.png",
+      "height": 8,
+      "ascent": 7,
       "chars": [
-        ""
-      ]
-    },
-    {
-      "type": "bitmap",
-      "file": "zy:font/ui/chrono_charge.png",
-      "height": 9,
-      "ascent": 8,
-      "chars": [
-        ""
-      ]
-    },
-    {
-      "type": "bitmap",
-      "file": "zy:font/ui/chrono_event.png",
-      "height": 9,
-      "ascent": 8,
-      "chars": [
-        ""
-      ]
-    },
-    {
-      "type": "bitmap",
-      "file": "zy:font/ui/chrono_drift.png",
-      "height": 9,
-      "ascent": 8,
-      "chars": [
-        ""
-      ]
-    },
-    {
-      "type": "bitmap",
-      "file": "zy:font/ui/chrono_integ.png",
-      "height": 9,
-      "ascent": 8,
-      "chars": [
-        ""
-      ]
-    },
-    {
-      "type": "bitmap",
-      "file": "zy:font/ui/chrono_ess.png",
-      "height": 9,
-      "ascent": 8,
-      "chars": [
-        ""
+        ""
       ]
     }
   ]

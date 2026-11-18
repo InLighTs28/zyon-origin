@@ -15,7 +15,6 @@ scoreboard players set @s zy.dial 0
 scoreboard players set @s zy.con 0
 scoreboard players set @s zy.chold 0
 scoreboard players set @s zy.mode 0
-scoreboard players set @s zy.timer 0
 scoreboard players set @s zy.evt 0
 scoreboard players set @s zy.evcd 25
 scoreboard players set @s zy.sync 0

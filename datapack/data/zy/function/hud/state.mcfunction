@@ -21,18 +21,6 @@ scoreboard players set @s zy.mode 0
 execute if score @s zy.lock matches 1.. run scoreboard players set @s zy.mode 3
 execute if score @s zy.pulse matches 1.. run scoreboard players set @s zy.mode 1
 execute if score @s zy.oath matches 1.. run scoreboard players set @s zy.mode 2
-scoreboard players set @s zy.timer 0
-execute if score @s zy.mode matches 1 run scoreboard players operation @s zy.timer = @s zy.pulse
-execute if score @s zy.mode matches 1 run scoreboard players add @s zy.timer 12
-execute if score @s zy.mode matches 1 run scoreboard players set #k zy.tmp 13
-execute if score @s zy.mode matches 2 run scoreboard players operation @s zy.timer = @s zy.oath
-execute if score @s zy.mode matches 2 run scoreboard players add @s zy.timer 19
-execute if score @s zy.mode matches 2 run scoreboard players set #k zy.tmp 20
-execute if score @s zy.mode matches 3 run scoreboard players operation @s zy.timer = @s zy.lock
-execute if score @s zy.mode matches 3 run scoreboard players add @s zy.timer 149
-execute if score @s zy.mode matches 3 run scoreboard players set #k zy.tmp 150
-execute if score @s zy.mode matches 1.. run scoreboard players operation @s zy.timer /= #k zy.tmp
-execute if score @s zy.timer matches 9.. run scoreboard players set @s zy.timer 8
 scoreboard players set @s zy.pready 0
 execute if score @s zy.tier matches 5.. run scoreboard players set @s zy.pready 2
 execute if score @s zy.tier matches 5.. if score @s zy.pulsecd matches 1.. run scoreboard players set @s zy.pready 1
@@ -54,7 +42,6 @@ apoli:resource operation @s zy:hud/charge = #ch zy.tmp
 apoli:resource operation @s zy:hud/hold = @s zy.hold3
 apoli:resource operation @s zy:hud/alert = @s zy.alert
 apoli:resource operation @s zy:hud/mode = @s zy.mode
-apoli:resource operation @s zy:hud/timer = @s zy.timer
 apoli:resource operation @s zy:hud/pready = @s zy.pready
 apoli:resource operation @s zy:hud/dial = @s zy.dial
 apoli:resource operation @s zy:hud/cons = @s zy.con

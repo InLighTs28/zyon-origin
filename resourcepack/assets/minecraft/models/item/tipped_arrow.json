@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/tipped_arrow_head",
+    "layer1": "minecraft:item/tipped_arrow_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 7100
+      },
+      "model": "zy:item/ring/core_siphon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7101
+      },
+      "model": "zy:item/ring/core_life"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7102
+      },
+      "model": "zy:item/ring/core_relay"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7103
+      },
+      "model": "zy:item/ring/core_momentum"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7104
+      },
+      "model": "zy:item/ring/core_alteration"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7105
+      },
+      "model": "zy:item/ring/core_erase"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7106
+      },
+      "model": "zy:item/ring/core_essence"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7107
+      },
+      "model": "zy:item/ring/core_anchor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7108
+      },
+      "model": "zy:item/ring/core_reveal"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7112
+      },
+      "model": "zy:item/ring/ring_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7113
+      },
+      "model": "zy:item/ring/ring_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7114
+      },
+      "model": "zy:item/ring/ring_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7150
+      },
+      "model": "zy:item/origin_frame"
+    }
+  ]
+}

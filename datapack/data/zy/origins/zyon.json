@@ -32,7 +32,7 @@
     ]
   },
   "icon": {
-    "id": "minecraft:leather_horse_armor",
+    "id": "minecraft:tipped_arrow",
     "components": {
       "minecraft:custom_model_data": 7150
     }
@@ -79,7 +79,6 @@
     "zy:hud/hold",
     "zy:hud/alert",
     "zy:hud/mode",
-    "zy:hud/timer",
     "zy:hud/pready",
     "zy:hud/dial",
     "zy:hud/cons",

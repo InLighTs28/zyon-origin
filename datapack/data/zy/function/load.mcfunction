@@ -87,6 +87,12 @@ scoreboard objectives add zy.ntot dummy
 scoreboard objectives add zy.view dummy
 scoreboard objectives add zy.hpcd dummy
 scoreboard objectives add zy.hrdy dummy
+scoreboard objectives add zy.qring dummy
+scoreboard objectives add zy.qtl dummy
+scoreboard objectives add zy.qtr dummy
+scoreboard objectives add zy.qbl dummy
+scoreboard objectives add zy.qbr dummy
+scoreboard objectives add zy.qfx dummy
 scoreboard objectives add zy.alert dummy
 scoreboard objectives add zy.mode dummy
 scoreboard objectives add zy.hsec dummy

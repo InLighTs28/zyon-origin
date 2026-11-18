@@ -1,2 +1,3 @@
-Samples: Kenney (www.kenney.nl) - Sci-fi Sounds, Interface Sounds, UI Audio - CC0 1.0.
-Layered and synthesized for ZyoN (sub-bass, risers, FM bells, alarms).
+ZyoN sound effects - original work.
+All sounds are synthesised from scratch for ZyoN (sine/FM tones, filtered noise, sub thumps, bit-crushed stutters).
+No third-party samples are used.

@@ -149,7 +149,7 @@
       },
       {
         "translate": "zy.hudguide.9",
-        "fallback": "§eTimer · Pulse / Oath / lock"
+        "fallback": "§eOuter ring · main timer: §6Pulse§e, §bits recharge§e, §dOath§e, §clock"
       },
       {
         "text": "\n"
@@ -183,166 +183,74 @@
       },
       {
         "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.C",
+        "fallback": "§bArc ↖ · charged hand (§bseal§7/§6shatter§7), then §eEssence kept"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.D",
+        "fallback": "§6Arc ↗ · incident to answer (§6spike§7/§cintrusion§7)"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.E",
+        "fallback": "§6Arc ↙ · Sync at 0%: drift countdown"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.F",
+        "fallback": "§aArc ↘ · weakest seal, last 30 s"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "zy.hudguide.note",
+        "fallback": "§8Arcs fill clockwise and §fblink§8 just before they run out. White flash = Pulse ready."
       }
     ]
   },
   "badges": [
-    {
-      "type": "origins:tooltip",
-      "sprite": "zy:textures/gui/badge/tier.png",
-      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
-      "text": {
-        "text": "",
-        "extra": [
-          {
-            "translate": "zy.badge.hud.chrono.h",
-            "fallback": "§b§lTIMERS · left of the screen"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "translate": "zy.badge.hud.chrono.i",
-            "fallback": "§7One line per running timer: icon, gauge, seconds left."
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.lock",
-            "fallback": "§7Core lock · abilities sealed"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.oath",
-            "fallback": "§7Oath · network unbound"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.pulse",
-            "fallback": "§7Pulse · active"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.pcd",
-            "fallback": "§7Pulse recharge · flashes when ready"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.charge",
-            "fallback": "§7Charged hand · seal (cyan) / shatter (orange)"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.event",
-            "fallback": "§7Incident · spike (amber) / intrusion (red)"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.drift",
-            "fallback": "§7Sync at 0% · drift countdown"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.integ",
-            "fallback": "§7Weakest seal · fades at 0"
-          },
-          {
-            "text": "\n"
-          },
-          {
-            "text": "",
-            "font": "zy:ui",
-            "color": "white"
-          },
-          {
-            "text": " "
-          },
-          {
-            "translate": "zy.badge.hud.chrono.ess",
-            "fallback": "§7Essence kept after a shatter"
-          }
-        ]
-      }
-    },
     {
       "type": "origins:tooltip",
       "sprite": "zy:textures/gui/badge/warn.png",

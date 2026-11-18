@@ -133,3 +133,11 @@ scoreboard players reset @s zy.a13
 scoreboard players reset @s zy.a14
 scoreboard players reset @s zy.cfg
 team leave @s[team=zy.ghost]
+scoreboard players reset @s zy.hpcd
+scoreboard players reset @s zy.hrdy
+scoreboard players reset @s zy.qring
+scoreboard players reset @s zy.qtl
+scoreboard players reset @s zy.qtr
+scoreboard players reset @s zy.qbl
+scoreboard players reset @s zy.qbr
+scoreboard players reset @s zy.qfx
