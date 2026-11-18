@@ -1,0 +1,25 @@
+{
+  "type": "apoli:modify_cursor_speed",
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:key_pressed",
+        "key": {
+          "key": "key.origins.secondary_active"
+        }
+      },
+      {
+        "type": "apoli:sneaking",
+        "inverted": true
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "add_multiplied_total",
+    "amount": -1.0
+  },
+  "horizontal": true,
+  "vertical": true,
+  "hidden": true
+}

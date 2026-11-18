@@ -1,0 +1,81 @@
+{
+  "type": "apoli:action_on_callback",
+  "entity_action_gained": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:and",
+        "actions": [
+          {
+            "type": "apoli:execute_command",
+            "command": "function zy:origin/wipe"
+          },
+          {
+            "type": "apoli:reset_skills",
+            "tree": "zy:zyon",
+            "refund": false
+          },
+          {
+            "type": "apoli:add_skill_points",
+            "skill_tree": "zy:zyon",
+            "points": -100000
+          }
+        ]
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:origin/fresh"
+      },
+      {
+        "type": "apoli:grant_skill_tree",
+        "skill_tree": "zy:zyon"
+      }
+    ]
+  },
+  "entity_action_lost": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:and",
+        "actions": [
+          {
+            "type": "apoli:execute_command",
+            "command": "function zy:origin/wipe"
+          },
+          {
+            "type": "apoli:reset_skills",
+            "tree": "zy:zyon",
+            "refund": false
+          },
+          {
+            "type": "apoli:add_skill_points",
+            "skill_tree": "zy:zyon",
+            "points": -100000
+          }
+        ]
+      },
+      {
+        "type": "apoli:revoke_skill_tree",
+        "skill_tree": "zy:zyon"
+      }
+    ]
+  },
+  "entity_action_respawned": {
+    "type": "apoli:execute_command",
+    "command": "function zy:core/death"
+  },
+  "entity_action_added": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:origin/added"
+      },
+      {
+        "type": "apoli:grant_skill_tree",
+        "skill_tree": "zy:zyon"
+      }
+    ]
+  },
+  "hidden": true
+}

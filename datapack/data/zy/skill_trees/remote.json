@@ -1,0 +1,27 @@
+{
+  "parent": "zy:hiflow",
+  "name": {
+    "translate": "zy.aug.remote.n",
+    "fallback": "Remote Contact"
+  },
+  "description": {
+    "translate": "zy.aug.remote.d",
+    "fallback": "Charging your hand while aiming at a being within 6 blocks seals it at once."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/key.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    4.5,
+    1
+  ],
+  "powers": [
+    "zy:aug/flag/remote"
+  ]
+}

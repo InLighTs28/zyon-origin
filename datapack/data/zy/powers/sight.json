@@ -1,0 +1,11 @@
+{
+  "type": "apoli:entity_glow",
+  "entity_condition": {
+    "type": "apoli:power",
+    "power": "zy:erased"
+  },
+  "red": 0.35,
+  "green": 0.9,
+  "blue": 1.0,
+  "hidden": true
+}

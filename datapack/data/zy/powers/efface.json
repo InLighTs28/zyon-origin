@@ -1,0 +1,7 @@
+{
+  "type": "apoli:invisibility",
+  "hidden": true,
+  "render_armor": false,
+  "render_held_items": false,
+  "render_outline": false
+}

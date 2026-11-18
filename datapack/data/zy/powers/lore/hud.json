@@ -1,0 +1,415 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.hud.name",
+    "fallback": "§bHUD"
+  },
+  "description": {
+    "text": "",
+    "extra": [
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": "\n\n\n\n\n\n\n\n\n"
+      },
+      {
+        "translate": "zy.power.hud.desc",
+        "fallback": "§7Supervision ring around the crosshair. §fRead it by number:§7\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.1",
+        "fallback": "§cFlux · your hunger, the fuel"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.2",
+        "fallback": "§dResonance · progress to next tier"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.3",
+        "fallback": "§dTier pips · 0 to 7"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.4",
+        "fallback": "§bSync · ≥75% overclock, 0% drift"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.5",
+        "fallback": "§bBandwidth · seals used / max"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.6",
+        "fallback": "§5Siphons · active drains"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.7",
+        "fallback": "§fArmed seal · ring = charged hand"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.8",
+        "fallback": "§6Alert · see the badge"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.9",
+        "fallback": "§eTimer · Pulse / Oath / lock"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.A",
+        "fallback": "§6Diamond · Pulse ready"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": " "
+      },
+      {
+        "translate": "zy.hudguide.B",
+        "fallback": "§fSmall ring · hold progress"
+      },
+      {
+        "text": "\n"
+      }
+    ]
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/tier.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "text": "",
+        "extra": [
+          {
+            "translate": "zy.badge.hud.chrono.h",
+            "fallback": "§b§lTIMERS · left of the screen"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "translate": "zy.badge.hud.chrono.i",
+            "fallback": "§7One line per running timer: icon, gauge, seconds left."
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.lock",
+            "fallback": "§7Core lock · abilities sealed"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.oath",
+            "fallback": "§7Oath · network unbound"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.pulse",
+            "fallback": "§7Pulse · active"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.pcd",
+            "fallback": "§7Pulse recharge · flashes when ready"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.charge",
+            "fallback": "§7Charged hand · seal (cyan) / shatter (orange)"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.event",
+            "fallback": "§7Incident · spike (amber) / intrusion (red)"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.drift",
+            "fallback": "§7Sync at 0% · drift countdown"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.integ",
+            "fallback": "§7Weakest seal · fades at 0"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.chrono.ess",
+            "fallback": "§7Essence kept after a shatter"
+          }
+        ]
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/warn.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "text": "",
+        "extra": [
+          {
+            "translate": "zy.badge.hud.alerts.h",
+            "fallback": "§c§lALERTS · 8"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.alerts.0",
+            "fallback": "§6Gold §8→ §7a node is dormant: get back in range"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.alerts.1",
+            "fallback": "§cRed §8→ §7overload armed: hands off"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "",
+            "font": "zy:ui",
+            "color": "white"
+          },
+          {
+            "text": " "
+          },
+          {
+            "translate": "zy.badge.hud.alerts.2",
+            "fallback": "§cDrop §8→ §7Flux ≤ 6: eat or siphon now"
+          }
+        ]
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.hud.zones",
+        "fallback": "§d§lSCREEN ZONES\n§fTop centre §8→ §7notifications, console\n§fTop left §8→ §7nodes · relays · signal %\n§fUnder the crosshair §8→ §7dial label\n§f/trigger zy.cfg set 1 §8→ §7HUD on/off"
+      }
+    }
+  ]
+}

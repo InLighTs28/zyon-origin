@@ -1,0 +1,5118 @@
+{
+  "type": "apoli:overlay",
+  "hidden": true,
+  "overlays": [
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 864,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 9
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 864,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 9
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 864,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 9
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/res.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 960,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/res",
+            "comparison": "==",
+            "compare_to": 10
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/flux.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 960,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/flux",
+            "comparison": "==",
+            "compare_to": 10
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sync.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 960,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 1056,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sync",
+            "comparison": "==",
+            "compare_to": 10
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 864,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 1344,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 1440,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 1536,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 1632,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2016,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2112,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2208,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2304,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2400,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 4
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2688,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2784,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2880,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 2976,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3072,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3168,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 5
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3360,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3456,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3552,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3648,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3744,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3840,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 3936,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 6
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4032,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4128,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4224,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4320,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4416,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4512,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4608,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/band.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 4608,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 4704,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cap",
+            "comparison": "==",
+            "compare_to": 7
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/used",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/siph.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/siph",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/siph.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/siph",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/siph.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/siph",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/siph.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/siph",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/tier.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 768,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/hold.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/hold",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/hold.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/hold",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.78,
+      "blue": 0.25,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 0.8,
+      "green": 0.55,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 2
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/timer.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 0.3,
+      "blue": 0.3,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/mode",
+            "comparison": "==",
+            "compare_to": 3
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/timer",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/pready.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/pready",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/pready.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/pready",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/alert.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/alert",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/alert.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/alert",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/alert.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 384,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/alert",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 0,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 288,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 384,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 480,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 576,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 672,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/sigil.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 768,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 864,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/charge.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 96,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/charge",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/charge.png",
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": false,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 96,
+      "height": 96,
+      "u": 192,
+      "v": 0,
+      "region_width": 96,
+      "region_height": 96,
+      "texture_width": 288,
+      "texture_height": 96,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/view",
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/charge",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    }
+  ]
+}

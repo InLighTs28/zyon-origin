@@ -1,0 +1,52 @@
+{
+  "type": "apoli:action_on_key_press",
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:sneaking",
+        "inverted": true
+      },
+      {
+        "type": "apoli:key_pressed",
+        "key": {
+          "key": "key.origins.ternary_active"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "hud_render": {
+    "should_render": false
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:dial/open"
+  },
+  "entity_action_released": {
+    "type": "apoli:execute_command",
+    "command": "function zy:dial/close"
+  },
+  "name": {
+    "translate": "zy.power.wheel.name",
+    "fallback": "§bSeal Dial"
+  },
+  "description": {
+    "translate": "zy.power.wheel.desc",
+    "fallback": "§79-channel protocol selector, §bprojected on the retina§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/key.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
+      "text": {
+        "translate": "zy.badge.wheel.key",
+        "fallback": "§b§lCONTROLS\n§fSecondary, hold §8→ §7opens, view frozen\n§fMouse ◂ ▸ / wheel §8→ §7turns\n§fRelease §8→ §7seal armed, hand charged\n§fSneak + wheel §8→ §7turns without opening"
+      }
+    }
+  ]
+}

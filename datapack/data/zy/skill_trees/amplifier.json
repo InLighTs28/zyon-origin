@@ -1,0 +1,30 @@
+{
+  "parent": "zy:antenna",
+  "name": {
+    "translate": "zy.aug.amplifier.n",
+    "fallback": "Signal Amplifier"
+  },
+  "description": {
+    "translate": "zy.aug.amplifier.d",
+    "fallback": "Signal loss per hop: 20% → 10%. Excludes Extra Bandwidth."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/tier.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    2.5,
+    1
+  ],
+  "powers": [
+    "zy:aug/flag/amplifier"
+  ],
+  "excludes": [
+    "zy:bandwidth"
+  ]
+}

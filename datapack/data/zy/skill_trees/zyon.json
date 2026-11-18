@@ -1,0 +1,24 @@
+{
+  "name": {
+    "translate": "zy.tree.name",
+    "fallback": "ZYON // AUGMENTATION PROTOCOL"
+  },
+  "description": {
+    "translate": "zy.tree.desc",
+    "fallback": "Points: 2 per Resonance tier, 1 per feat of your VP file."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/origin/zyon.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "challenge",
+  "background": "zy:textures/gui/advancements/zyon_bg.png",
+  "auto_grant": false,
+  "refundable": true,
+  "condition": {
+    "type": "origins:origin",
+    "layer": "origins:origin",
+    "origin": "zy:zyon"
+  }
+}

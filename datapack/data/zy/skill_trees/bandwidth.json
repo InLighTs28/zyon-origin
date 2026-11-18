@@ -1,0 +1,30 @@
+{
+  "parent": "zy:antenna",
+  "name": {
+    "translate": "zy.aug.bandwidth.n",
+    "fallback": "Extra Bandwidth"
+  },
+  "description": {
+    "translate": "zy.aug.bandwidth.d",
+    "fallback": "+1 seal slot. Excludes the Signal Amplifier."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/tier.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    1.5,
+    1
+  ],
+  "powers": [
+    "zy:aug/flag/bandwidth"
+  ],
+  "excludes": [
+    "zy:amplifier"
+  ]
+}

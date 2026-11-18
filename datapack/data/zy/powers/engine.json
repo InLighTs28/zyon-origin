@@ -1,0 +1,104 @@
+{
+  "type": "apoli:action_over_time",
+  "interval": 10,
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:core/beat"
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.gain",
+          "comparison": ">=",
+          "compare_to": 10
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:feed",
+              "food": 1,
+              "saturation": 0
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "scoreboard players remove @s zy.gain 10"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.gain",
+          "comparison": ">=",
+          "compare_to": 10
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:feed",
+              "food": 1,
+              "saturation": 0
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "scoreboard players remove @s zy.gain 10"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.cost",
+          "comparison": ">=",
+          "compare_to": 10
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:exhaust",
+              "amount": 4
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "scoreboard players remove @s zy.cost 10"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.cost",
+          "comparison": ">=",
+          "compare_to": 10
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:exhaust",
+              "amount": 4
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "scoreboard players remove @s zy.cost 10"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hidden": true
+}

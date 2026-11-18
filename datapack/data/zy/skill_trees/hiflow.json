@@ -1,0 +1,30 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.hiflow.n",
+    "fallback": "High-Flow Siphon"
+  },
+  "description": {
+    "translate": "zy.aug.hiflow.d",
+    "fallback": "3 Siphons instead of 2, +25% Flux siphoned. Excludes Reinforced Life Link."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/cost.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    4,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/hiflow"
+  ],
+  "excludes": [
+    "zy:vital"
+  ]
+}

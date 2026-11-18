@@ -1,0 +1,8 @@
+{
+  "type": "apoli:modify_healing",
+  "modifier": {
+    "operation": "add_multiplied_total",
+    "amount": -0.5
+  },
+  "hidden": true
+}

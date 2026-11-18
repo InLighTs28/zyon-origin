@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_sensor"
+    },
+    "title": {
+      "translate": "zy.adv.tier_2.t",
+      "fallback": "Anomalous Signature"
+    },
+    "description": {
+      "translate": "zy.adv.tier_2.d",
+      "fallback": "Tier 2 · Kingdom's sensors log radianite that does not belong to you."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/tier_1"
+}

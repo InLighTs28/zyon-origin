@@ -1,0 +1,163 @@
+{
+  "type": "apoli:active_self",
+  "name": "Cercle des sceaux",
+  "description": "Touche secondaire : ouvre le cercle et choisis le sceau à apposer. De nouveaux sceaux s'éveillent avec la Résonance.",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "cooldown": 5,
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "apoli:sneaking",
+    "inverted": true
+  },
+  "entity_action": {
+    "type": "apoli:radial_menu",
+    "entries": [
+      {
+        "item": {
+          "item": "minecraft:purple_dye"
+        },
+        "icon": "zy:textures/gui/sceau/siphon.png",
+        "tooltip": "Sceau de Siphon",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/siphon"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:red_dye"
+        },
+        "icon": "zy:textures/gui/sceau/vie.png",
+        "tooltip": "Sceau de Vie",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/vie"
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:brown_dye"
+        },
+        "icon": "zy:textures/gui/sceau/subsistance.png",
+        "tooltip": "Sceau de Subsistance",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/subsistance"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:light_blue_dye"
+        },
+        "icon": "zy:textures/gui/sceau/elan.png",
+        "tooltip": "Sceau de Élan",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/elan"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 2
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:lime_dye"
+        },
+        "icon": "zy:textures/gui/sceau/alteration.png",
+        "tooltip": "Sceau de Altération",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/alteration"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 3
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:white_dye"
+        },
+        "icon": "zy:textures/gui/sceau/effacer.png",
+        "tooltip": "Perception : effacer",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/effacer"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 4
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:yellow_dye"
+        },
+        "icon": "zy:textures/gui/sceau/essence.png",
+        "tooltip": "Sceau de Essence",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/essence"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 5
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:magenta_dye"
+        },
+        "icon": "zy:textures/gui/sceau/ancre.png",
+        "tooltip": "Sceau de Ancre",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/ancre"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 6
+        }
+      },
+      {
+        "item": {
+          "item": "minecraft:cyan_dye"
+        },
+        "icon": "zy:textures/gui/sceau/reveler.png",
+        "tooltip": "Perception : révéler",
+        "entity_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:msg/choix/reveler"
+        },
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pal",
+          "comparison": ">=",
+          "compare_to": 4
+        }
+      }
+    ]
+  }
+}

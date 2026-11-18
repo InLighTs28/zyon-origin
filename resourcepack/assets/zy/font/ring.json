@@ -1,0 +1,112 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_siphon.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_life.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_relay.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_momentum.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_alteration.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_erase.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_essence.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_anchor.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/core_reveal.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/ring_2.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/ring_3.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/ring/ring_4.png",
+      "height": 48,
+      "ascent": 21,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

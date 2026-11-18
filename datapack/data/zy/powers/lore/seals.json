@@ -1,0 +1,40 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.seals.name",
+    "fallback": "§bSeals"
+  },
+  "description": {
+    "translate": "zy.power.seals.desc",
+    "fallback": "§7Nine link protocols, §bunlocked by Resonance§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/seal_siphon.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.seals.t01",
+        "fallback": "§b§lTIERS 0-1\n§f§5Siphon §8→ §7feeds + regenerates you\n§f§cLife §8→ §7shared damage 30→65%\n§f§6Relay §8→ §7repeater ×1.5 (T5 hub ×2)"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/seal_momentum.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.seals.t24",
+        "fallback": "§b§lTIERS 2-4\n§f§9Momentum §8→ §7pulls to you (T4 slingshot)\n§f§aAlteration §8→ §7shared effects (T5 +fire)\n§f§fErase §8→ §7parallel layer\n§f§bReveal §8→ §7glows, no invisibility"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/seal_essence.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.seals.t56",
+        "fallback": "§b§lTIERS 5-7\n§f§eEssence §8→ §7armor, speed (T6 strength, HP)\n§f§dAnchor §8→ §7recall (T7 swap)"
+      }
+    }
+  ]
+}

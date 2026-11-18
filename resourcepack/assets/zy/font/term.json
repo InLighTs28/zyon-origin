@@ -1,0 +1,23 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        " ": 4
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/term.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        "ABCDEFGHIJKLMNOP",
+        "QRSTUVWXYZ012345",
+        "6789.,:·/%+-=_!?",
+        "'()[]<>|#×▸◂◆▰▱⚠",
+        "ΩŒÉÈÊÀÂÔÛÙÎÇ\u0000\u0000\u0000\u0000"
+      ]
+    }
+  ]
+}

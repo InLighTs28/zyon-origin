@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:recovery_compass"
+    },
+    "title": {
+      "translate": "zy.adv.tier_4.t",
+      "fallback": "File Opened"
+    },
+    "description": {
+      "translate": "zy.adv.tier_4.d",
+      "fallback": "Tier 4 · A VALORANT Protocol handler writes your name down: unclassified Radiant, inverse type."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/tier_3"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "apoli:modify_food",
+  "food_modifier": {
+    "operation": "add_multiplied_total",
+    "amount": -0.75
+  },
+  "saturation_modifier": {
+    "operation": "add_multiplied_total",
+    "amount": -1.0
+  },
+  "name": {
+    "translate": "zy.power.void.name",
+    "fallback": "§bHollow Core"
+  },
+  "description": {
+    "translate": "zy.power.void.desc",
+    "fallback": "§7Core node with no Flux cell. External power only; chassis self-repair §coffline§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/cost.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/bar.png",
+      "text": {
+        "translate": "zy.badge.void.flux",
+        "fallback": "§6§lFLUX\n§fFood §8→ §725%, no saturation\n§fHunger bar §8→ §7your Flux\n§fNatural regen §8→ §7§cnone\n§fHealing §8→ §7§c÷2§7, only Siphon regenerates"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/warn.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/star.png",
+      "text": {
+        "translate": "zy.badge.void.fail",
+        "fallback": "§c§lFAILURES\n§fFlux ≤ 6 §8→ §7§c1 dmg / 3 s§7, far node drops\n§fFlux 0 §8→ §7§cblackout§7, network collapses\n§fLink severed §8→ §7§cbacklash\n§fNetwork up §8→ §7a hostile hunts you / 10 s\n§fBandwidth full §8→ §7Slowness + Fatigue"
+      }
+    }
+  ]
+}

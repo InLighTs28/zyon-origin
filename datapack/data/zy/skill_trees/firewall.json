@@ -1,0 +1,27 @@
+{
+  "parent": "zy:quickpulse",
+  "name": {
+    "translate": "zy.aug.firewall.n",
+    "fallback": "Firewall"
+  },
+  "description": {
+    "translate": "zy.aug.firewall.d",
+    "fallback": "Your seals ignore 25% of their target's Magic Resistance."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/warn.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    7,
+    1
+  ],
+  "powers": [
+    "zy:aug/flag/firewall"
+  ]
+}

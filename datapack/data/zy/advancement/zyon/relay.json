@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lightning_rod"
+    },
+    "title": {
+      "translate": "zy.adv.relay.t",
+      "fallback": "Relay"
+    },
+    "description": {
+      "translate": "zy.adv.relay.d",
+      "fallback": "Keep a seal alive beyond your own range, through another bearer."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/tier_2"
+}

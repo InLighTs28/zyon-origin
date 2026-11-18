@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "zy.adv.overload.t",
+      "fallback": "Critical Mass"
+    },
+    "description": {
+      "translate": "zy.adv.overload.d",
+      "fallback": "Let a saturated node explode."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/shatter"
+}

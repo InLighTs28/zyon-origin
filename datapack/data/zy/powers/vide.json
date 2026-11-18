@@ -1,0 +1,13 @@
+{
+  "type": "apoli:modify_food",
+  "name": "Vide intérieur",
+  "description": "Tu n'as aucun Flux à toi : la nourriture ne te rend qu'un quart de sa valeur, sans saturation. Ta barre de faim est ton Flux, et tu dois siphonner les êtres vivants pour exister.",
+  "food_modifier": {
+    "operation": "add_multiplied_total",
+    "value": -0.75
+  },
+  "saturation_modifier": {
+    "operation": "add_multiplied_total",
+    "value": -1.0
+  }
+}

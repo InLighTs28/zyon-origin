@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": {
+      "translate": "zy.pack.data",
+      "fallback": "§b§lZYON §8» §fThe Pactbound\n§7Origin · network & seals"
+    }
+  }
+}

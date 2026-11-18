@@ -1,0 +1,1 @@
+execute unless entity @s[tag=zy.s0] unless entity @s[tag=zy.s1] unless entity @s[tag=zy.s2] unless entity @s[tag=zy.s3] unless entity @s[tag=zy.s4] unless entity @s[tag=zy.s5] unless entity @s[tag=zy.s6] unless entity @s[tag=zy.s7] unless entity @s[tag=zy.s8] run function zy:seal/clear

@@ -1,0 +1,27 @@
+{
+  "parent": "zy:flux_buffer",
+  "name": {
+    "translate": "zy.aug.thermal.n",
+    "fallback": "Thermal Regulator"
+  },
+  "description": {
+    "translate": "zy.aug.thermal.d",
+    "fallback": "A saturated network no longer slows you down."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/info.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    0,
+    1
+  ],
+  "powers": [
+    "zy:aug/flag/thermal"
+  ]
+}

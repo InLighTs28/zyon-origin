@@ -1,0 +1,2018 @@
+{
+  "type": "apoli:action_on_key_press",
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "apoli:key_pressed",
+    "key": {
+      "key": "key.origins.ternary_active"
+    },
+    "inverted": true
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:input/p_press"
+  },
+  "entity_action_released": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:input/p_release"
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.act",
+          "comparison": "==",
+          "compare_to": 4
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:execute_command",
+              "command": "function zy:seal/place_self"
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@a[tag=zy.mounthost]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:selector_action",
+                  "selector": "@e[type=item_display,tag=zy.mountme]",
+                  "bientity_action": {
+                    "type": "apoli:invert",
+                    "action": {
+                      "type": "apoli:mount",
+                      "force": true
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "function zy:ring/mount_done"
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp0]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#a569f0",
+                        "end_color": "#a569f000",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#a569f0",
+                        "end_color": "#a569f000",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp1]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#f04048",
+                        "end_color": "#f0404800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#f04048",
+                        "end_color": "#f0404800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp2]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#ff9628",
+                        "end_color": "#ff962800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#ff9628",
+                        "end_color": "#ff962800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp3]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#409cff",
+                        "end_color": "#409cff00",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#409cff",
+                        "end_color": "#409cff00",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp4]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#60dc60",
+                        "end_color": "#60dc6000",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#60dc60",
+                        "end_color": "#60dc6000",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp5]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#dce4ff",
+                        "end_color": "#dce4ff00",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#dce4ff",
+                        "end_color": "#dce4ff00",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp6]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#ffc838",
+                        "end_color": "#ffc83800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#ffc838",
+                        "end_color": "#ffc83800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp7]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#e850e8",
+                        "end_color": "#e850e800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#e850e8",
+                        "end_color": "#e850e800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp8]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#40e8e8",
+                        "end_color": "#40e8e800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#40e8e8",
+                        "end_color": "#40e8e800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp0] remove zy.fxp0"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp1] remove zy.fxp1"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp2] remove zy.fxp2"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp3] remove zy.fxp3"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp4] remove zy.fxp4"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp5] remove zy.fxp5"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp6] remove zy.fxp6"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp7] remove zy.fxp7"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp8] remove zy.fxp8"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.act",
+          "comparison": "==",
+          "compare_to": 3
+        },
+        "if_action": {
+          "type": "apoli:execute_command",
+          "command": "function zy:seal/dissolve_all"
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:scoreboard",
+              "objective": "zy.act",
+              "comparison": "==",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:scoreboard",
+              "objective": "zy.a10",
+              "comparison": "==",
+              "compare_to": 1
+            }
+          ]
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:raycast",
+              "distance": 6,
+              "block": true,
+              "entity": true,
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:execute_command",
+                  "command": "tag @s add zy.tgt"
+                }
+              }
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "execute if entity @e[tag=zy.tgt,type=!#zy:inert,limit=1] run function zy:seal/touch"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.tgt] remove zy.tgt"
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@a[tag=zy.mounthost]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:selector_action",
+                  "selector": "@e[type=item_display,tag=zy.mountme]",
+                  "bientity_action": {
+                    "type": "apoli:invert",
+                    "action": {
+                      "type": "apoli:mount",
+                      "force": true
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "function zy:ring/mount_done"
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp0]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#a569f0",
+                        "end_color": "#a569f000",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#a569f0",
+                        "end_color": "#a569f000",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp1]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#f04048",
+                        "end_color": "#f0404800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#f04048",
+                        "end_color": "#f0404800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp2]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#ff9628",
+                        "end_color": "#ff962800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#ff9628",
+                        "end_color": "#ff962800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp3]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#409cff",
+                        "end_color": "#409cff00",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#409cff",
+                        "end_color": "#409cff00",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp4]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#60dc60",
+                        "end_color": "#60dc6000",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#60dc60",
+                        "end_color": "#60dc6000",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp5]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#dce4ff",
+                        "end_color": "#dce4ff00",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#dce4ff",
+                        "end_color": "#dce4ff00",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp6]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#ffc838",
+                        "end_color": "#ffc83800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#ffc838",
+                        "end_color": "#ffc83800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp7]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#e850e8",
+                        "end_color": "#e850e800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#e850e8",
+                        "end_color": "#e850e800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:selector_action",
+              "selector": "@e[tag=zy.fxp8]",
+              "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/ring.png",
+                        "lifetime": 12,
+                        "size": 0.2,
+                        "end_size": 2.6,
+                        "color": "#40e8e8",
+                        "end_color": "#40e8e800",
+                        "friction": 0.0,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive",
+                        "easing": "ease_out_quad"
+                      },
+                      "count": 1,
+                      "speed": 0.0,
+                      "force": true,
+                      "spread": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "offset_y": 0.15
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/hex.png",
+                        "lifetime": 14,
+                        "lifetime_variation": 6,
+                        "size": 0.16,
+                        "size_variation": 0.06,
+                        "end_size": 0.0,
+                        "color": "#40e8e8",
+                        "end_color": "#40e8e800",
+                        "friction": 0.86,
+                        "roll": "rUni(0, 360)",
+                        "roll_speed": "rNor(0, 8)",
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 14,
+                      "speed": 0.12,
+                      "force": true,
+                      "spread": {
+                        "x": 0.4,
+                        "y": 0.2,
+                        "z": 0.4
+                      },
+                      "offset_y": 0.4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": {
+                        "type": "apoli:custom",
+                        "texture": "zy:textures/particle/spark.png",
+                        "frames": 4,
+                        "frame_time": 2,
+                        "loop_frames": true,
+                        "lifetime": 16,
+                        "lifetime_variation": 8,
+                        "size": 0.1,
+                        "size_variation": 0.05,
+                        "end_size": 0.0,
+                        "color": "#ffffff",
+                        "end_color": "#ffffff00",
+                        "gravity": 0.01,
+                        "friction": 0.9,
+                        "physics": false,
+                        "emissive": true,
+                        "blend": "additive"
+                      },
+                      "count": 6,
+                      "speed": 0.05,
+                      "force": true,
+                      "spread": {
+                        "x": 0.3,
+                        "y": 0.4,
+                        "z": 0.3
+                      },
+                      "offset_y": 0.6
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp0] remove zy.fxp0"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp1] remove zy.fxp1"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp2] remove zy.fxp2"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp3] remove zy.fxp3"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp4] remove zy.fxp4"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp5] remove zy.fxp5"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp6] remove zy.fxp6"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp7] remove zy.fxp7"
+            },
+            {
+              "type": "apoli:execute_command",
+              "command": "tag @e[tag=zy.fxp8] remove zy.fxp8"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:input/act_clear"
+      }
+    ]
+  },
+  "name": {
+    "translate": "zy.power.place.name",
+    "fallback": "§bSeal"
+  },
+  "description": {
+    "translate": "zy.power.place.desc",
+    "fallback": "§7Radianite circuit §binjected by contact§7. The target is indexed as a network node."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/key.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
+      "text": {
+        "translate": "zy.badge.place.key",
+        "fallback": "§b§lCONTROLS\n§fPrimary, tap §8→ §7hand charged 5 s\n§fRight-click a being §8→ §7seals it (no hit, no aggro)\n§fSneak + tap §8→ §7seal yourself\n§fHold 0.5 s §8→ §7shatter the bearer you aim at\n§fHold 1.5 s §8→ §7dissolve everything"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.place.rules",
+        "fallback": "§d§lRULES\n§fAlready sealed §8→ §7regenerated\n§fMagic Resistance §8→ §7may reject (½ MR)\n§fOn yourself §8→ §7Life, Alteration, Erase"
+      }
+    }
+  ]
+}

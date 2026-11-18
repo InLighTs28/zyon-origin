@@ -1,0 +1,8 @@
+{
+  "type": "apoli:modify_food",
+  "hidden": true,
+  "food_modifier": {
+    "operation": "add_multiplied_total",
+    "amount": 0.15
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "type": "apoli:multiple",
+  "hidden": true,
+  "invisible": {
+    "type": "apoli:invisibility",
+    "render_armor": false,
+    "render_held_items": false,
+    "render_outline": true,
+    "bientity_condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:both",
+          "condition": {
+            "type": "apoli:power",
+            "power": "zy:erased"
+          }
+        },
+        {
+          "type": "apoli:either",
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:power",
+                "power": "zy:void"
+              },
+              {
+                "type": "apoli:power",
+                "power": "zy:erased",
+                "inverted": true
+              }
+            ]
+          }
+        }
+      ],
+      "inverted": true
+    }
+  },
+  "blind": {
+    "type": "apoli:prevent_entity_render",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:both",
+          "condition": {
+            "type": "apoli:power",
+            "power": "zy:erased"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:both",
+          "condition": {
+            "type": "apoli:living"
+          }
+        }
+      ]
+    }
+  },
+  "untouchable": {
+    "type": "apoli:prevent_entity_selection",
+    "bientity_condition": {
+      "type": "apoli:both",
+      "condition": {
+        "type": "apoli:power",
+        "power": "zy:erased"
+      },
+      "inverted": true
+    }
+  },
+  "phase": {
+    "type": "apoli:prevent_entity_collision",
+    "bientity_condition": {
+      "type": "apoli:both",
+      "condition": {
+        "type": "apoli:power",
+        "power": "zy:erased"
+      },
+      "inverted": true
+    }
+  },
+  "immune": {
+    "type": "apoli:modify_damage_taken",
+    "bientity_condition": {
+      "type": "apoli:both",
+      "condition": {
+        "type": "apoli:power",
+        "power": "zy:erased"
+      },
+      "inverted": true
+    },
+    "modifier": {
+      "operation": "add_multiplied_total",
+      "amount": -1.0
+    }
+  },
+  "harmless": {
+    "type": "apoli:modify_damage_dealt",
+    "bientity_condition": {
+      "type": "apoli:both",
+      "condition": {
+        "type": "apoli:power",
+        "power": "zy:erased"
+      },
+      "inverted": true
+    },
+    "modifier": {
+      "operation": "add_multiplied_total",
+      "amount": -1.0
+    }
+  },
+  "no_mining": {
+    "type": "apoli:modify_break_speed",
+    "modifier": {
+      "operation": "add_multiplied_total",
+      "amount": -1.0
+    }
+  },
+  "ghost": {
+    "type": "apoli:model_color",
+    "red": 0.55,
+    "green": 0.95,
+    "blue": 1.0,
+    "alpha": 0.55
+  },
+  "deaf": {
+    "type": "apoli:modify_hearing_range",
+    "sounds": true,
+    "voice": true,
+    "bientity_condition": {
+      "type": "apoli:target_condition",
+      "condition": {
+        "type": "apoli:power",
+        "power": "zy:erased"
+      },
+      "inverted": true
+    },
+    "modifier": {
+      "operation": "add_multiplied_total",
+      "amount": -1.0
+    }
+  }
+}

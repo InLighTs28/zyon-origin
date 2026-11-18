@@ -1,0 +1,2257 @@
+{
+  "type": "apoli:overlay",
+  "hidden": true,
+  "overlays": [
+    {
+      "texture": "zy:textures/gui/hud/dial_ring.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:key_pressed",
+            "key": {
+              "key": "key.origins.secondary_active"
+            }
+          },
+          {
+            "type": "apoli:sneaking",
+            "inverted": true
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/siphon.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": -46,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:key_pressed",
+            "key": {
+              "key": "key.origins.secondary_active"
+            }
+          },
+          {
+            "type": "apoli:sneaking",
+            "inverted": true
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": -46,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/life.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:key_pressed",
+            "key": {
+              "key": "key.origins.secondary_active"
+            }
+          },
+          {
+            "type": "apoli:sneaking",
+            "inverted": true
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 30,
+      "y": -35,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/relay.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/relay.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 1
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/momentum.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/momentum.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 2
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/alteration.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/alteration.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 3
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/erase.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/erase.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/essence.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/essence.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 5
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/anchor.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/anchor.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 6
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/reveal.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": ">=",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal_locked/reveal.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 20,
+      "height": 20,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/tier",
+            "comparison": "<",
+            "compare_to": 4
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:key_pressed",
+                "key": {
+                  "key": "key.origins.secondary_active"
+                }
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          },
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/sel",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_ring.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "condition": {
+        "type": "apoli:resource",
+        "resource": "zy:hud/cons",
+        "comparison": "==",
+        "compare_to": 1
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/siphon.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": -46,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 0
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/siphon.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 0,
+      "y": -46,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 0,
+      "y": -46,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/life.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 2
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/life.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 2
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 30,
+      "y": -35,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 2
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/relay.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 12
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/relay.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 12
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 45,
+      "y": -8,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 12
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/momentum.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 4
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/momentum.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 4
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 40,
+      "y": 23,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 4
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/alteration.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 6
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/alteration.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 6
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": 16,
+      "y": 43,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 6
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/erase.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 13
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/erase.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 13
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": -16,
+      "y": 43,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 13
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/essence.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 8
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 9
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 10
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/essence.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 8
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 9
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 10
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": -40,
+      "y": 23,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 8
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 9
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 10
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/anchor.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/anchor.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": -45,
+      "y": -8,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/reveal.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 0.35,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "!=",
+                "compare_to": 14
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/seal/reveal.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 16,
+      "height": 16,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 14
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "texture": "zy:textures/gui/hud/dial_sel.png",
+      "draw_mode": "texture",
+      "draw_phase": "above_hud",
+      "hide_with_hud": true,
+      "visible_in_third_person": true,
+      "strength": 1.0,
+      "red": 0.25,
+      "green": 0.95,
+      "blue": 0.78,
+      "anchor": "center",
+      "x": -30,
+      "y": -35,
+      "width": 24,
+      "height": 24,
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:resource",
+            "resource": "zy:hud/cons",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "apoli:or",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "zy:hud/pcur",
+                "comparison": "==",
+                "compare_to": 14
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

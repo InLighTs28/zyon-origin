@@ -1,0 +1,45 @@
+{
+  "type": "apoli:action_on_key_press",
+  "key": {
+    "key": "key.origins.ternary_active"
+  },
+  "hud_render": {
+    "should_render": false
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:rcon/press"
+  },
+  "entity_action_released": {
+    "type": "apoli:execute_command",
+    "command": "function zy:rcon/release"
+  },
+  "name": {
+    "translate": "zy.power.console.name",
+    "fallback": "§bConsole"
+  },
+  "description": {
+    "translate": "zy.power.console.desc",
+    "fallback": "§7Admin interface: §brouting, throughput and filters§7 for every channel."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/key.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
+      "text": {
+        "translate": "zy.badge.console.key",
+        "fallback": "§b§lCONTROLS\n§f3rd key, tap §8→ §7Siphon ⇄ last seal\n§f3rd key, hold §8→ §7radial console\n§fWheel §8→ §7next / previous parameter\n§fTab §8→ §7cycle its value"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.console.params",
+        "fallback": "§d§lPARAMETERS\n§f§5Siphon §8→ §7flow, threshold\n§f§cLife §8→ §7share, isolation\n§f§9Momentum §8→ §7vector, distance\n§f§aAlteration §8→ §7filter, fire\n§f§eEssence §8→ §7per stat\n§f§6Relay §8→ §7range\n§f§fPerception §8→ §7suspend\n§f§dAnchor §8→ §7mode\n§f§cOverload §8→ §7interlock"
+      }
+    }
+  ]
+}

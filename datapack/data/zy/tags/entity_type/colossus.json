@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:iron_golem",
+    "minecraft:ravager",
+    "minecraft:hoglin",
+    "minecraft:zoglin",
+    "minecraft:warden",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:elder_guardian",
+    "minecraft:sniffer"
+  ]
+}

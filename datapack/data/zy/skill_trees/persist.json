@@ -1,0 +1,27 @@
+{
+  "parent": "zy:remote",
+  "name": {
+    "translate": "zy.aug.persist.n",
+    "fallback": "Persistent Charge"
+  },
+  "description": {
+    "translate": "zy.aug.persist.d",
+    "fallback": "A charged hand holds for 10 s instead of 5 s."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/key.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    4.5,
+    2
+  ],
+  "powers": [
+    "zy:aug/flag/persist"
+  ]
+}

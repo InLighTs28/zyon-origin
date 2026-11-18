@@ -1,0 +1,27 @@
+{
+  "parent": "zy:thermal",
+  "name": {
+    "translate": "zy.aug.jammer.n",
+    "fallback": "Signature Jammer"
+  },
+  "description": {
+    "translate": "zy.aug.jammer.d",
+    "fallback": "Hostiles lock onto your radianite signature every 30 s instead of 10 s."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/warn.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    0,
+    2
+  ],
+  "powers": [
+    "zy:aug/flag/jammer"
+  ]
+}

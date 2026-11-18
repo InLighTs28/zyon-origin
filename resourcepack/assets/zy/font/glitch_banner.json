@@ -1,0 +1,292 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_1.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_2.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_3.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_en_4.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_0.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_1.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_2.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_3.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/glitch/banner_fr_4.png",
+      "height": 34,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

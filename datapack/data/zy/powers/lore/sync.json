@@ -1,0 +1,31 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.sync.name",
+    "fallback": "§bSync"
+  },
+  "description": {
+    "translate": "zy.power.sync.desc",
+    "fallback": "§7Network clock. Without operator input the frame §bdrifts§7 and the Pact's memory decays."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.sync.gauge",
+        "fallback": "§d§lGAUGE · TOP ARC\n§fSeal §8→ §7+12\n§fShatter §8→ §7+10\n§fRefresh §8→ §7+8\n§fEvent §8→ §7+25\n§fActive Siphon §8→ §7+1/s\n§fDecay §8→ §7§c−3/s\n§f≥ 75% §8→ §7§bOverclock§7, transfers +20%\n§f0% for 10 s §8→ §7§cDrift§7, Resonance leaks"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/warn.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/star.png",
+      "text": {
+        "translate": "zy.badge.sync.upkeep",
+        "fallback": "§c§lUPKEEP\n§fSeal wear §8→ §72 min\n§fRight-click the bearer §8→ §7regenerated\n§fEvery 20-35 s §8→ §7network event\n§f§6● Spike §8→ §7right-click it: bonus\n§f§c● Intrusion §8(T3+) §8→ §7right-click within 10 s"
+      }
+    }
+  ]
+}

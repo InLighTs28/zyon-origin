@@ -1,0 +1,30 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.vital.n",
+    "fallback": "Reinforced Life Link"
+  },
+  "description": {
+    "translate": "zy.aug.vital.d",
+    "fallback": "+15% Life transfer. Excludes the High-Flow Siphon."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/cost.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    5,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/vital"
+  ],
+  "excludes": [
+    "zy:hiflow"
+  ]
+}

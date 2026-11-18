@@ -1,0 +1,21 @@
+{
+  "type": "apoli:action_on_scroll_wheel",
+  "direction": "down",
+  "scroll_amount": 1,
+  "prevent_hotbar_change": true,
+  "cooldown": 2,
+  "condition": {
+    "type": "apoli:key_pressed",
+    "key": {
+      "key": "key.origins.ternary_active"
+    }
+  },
+  "hud_render": {
+    "should_render": false
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:rcon/next"
+  },
+  "hidden": true
+}

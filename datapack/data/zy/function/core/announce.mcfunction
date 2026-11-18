@@ -1,0 +1,9 @@
+execute if score @s zy.sel matches 0 run return run function zy:msg/select/siphon
+execute if score @s zy.sel matches 1 run return run function zy:msg/select/life
+execute if score @s zy.sel matches 2 run return run function zy:msg/select/relay
+execute if score @s zy.sel matches 3 run return run function zy:msg/select/momentum
+execute if score @s zy.sel matches 4 run return run function zy:msg/select/alteration
+execute if score @s zy.sel matches 5 run return run function zy:msg/select/erase
+execute if score @s zy.sel matches 6 run return run function zy:msg/select/essence
+execute if score @s zy.sel matches 7 run return run function zy:msg/select/anchor
+execute if score @s zy.sel matches 8 run return run function zy:msg/select/reveal

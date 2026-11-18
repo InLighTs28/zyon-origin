@@ -1,0 +1,40 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.resonance.name",
+    "fallback": "§bResonance"
+  },
+  "description": {
+    "translate": "zy.power.resonance.desc",
+    "fallback": "§7The Pact's memory. Every unit of Flux routed leaves a trace: §d8 clearance tiers§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/tier.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/increase_decrease.png",
+      "text": {
+        "translate": "zy.badge.res.tiers",
+        "fallback": "§d§lTIERS\n§fSeals §8→ §71 → 6\n§fRange §8→ §78 → 24 blocks\n§fTransfer §8→ §730 → 65%\n§fThresholds §8→ §70.2k · 0.6k · 1.5k · 3k · 5k · 8k · 12k"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/ultimate.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/ultimate.png",
+      "text": {
+        "translate": "zy.badge.res.aug",
+        "fallback": "§e§lAUGMENTS\n§fPer tier §8→ §7+2 points\n§fPer feat §8→ §7+1 point\n§fKey §8→ §7\"Open Skill Tree\""
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/warn.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/star.png",
+      "text": {
+        "translate": "zy.badge.res.mr",
+        "fallback": "§c§lMAGIC RESISTANCE\n§fArmor enchant §8→ §7I to IV\n§fInnate §8→ §7witches, wardens…\n§fEffect §8→ §7less damage, weaker\n§7  transfers, effects shrugged off"
+      }
+    }
+  ]
+}

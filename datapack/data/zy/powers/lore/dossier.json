@@ -1,0 +1,22 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.dossier.name",
+    "fallback": "§bVP File Ø"
+  },
+  "description": {
+    "translate": "zy.power.dossier.desc",
+    "fallback": "§7§8[CLASSIFIED] §7Born during First Light, radianite rate: §f0§7. Does not store Flux, §broutes it§7. Watched by Kingdom and the VALORANT Protocol. Repeated intrusions from §cOmega Earth§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.dossier.ui",
+        "fallback": "§d§lINTERFACE\n§fProgress §8→ §7ZYON advancement tab\n§fHUD §8→ §7around the crosshair\n§f/trigger zy.cfg set 1 §8→ §7HUD on/off\n§f/trigger zy.cfg set 2 §8→ §7all controls\n§f/trigger zy.cfg set 3 §8→ §7how to read the HUD"
+      }
+    }
+  ]
+}

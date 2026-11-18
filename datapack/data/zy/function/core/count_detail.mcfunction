@@ -1,0 +1,12 @@
+execute store result score @s zy.n0 if entity @e[tag=zy.owned,tag=zy.s0]
+execute store result score @s zy.n1 if entity @e[tag=zy.owned,tag=zy.s1]
+execute store result score @s zy.n2 if entity @e[tag=zy.owned,tag=zy.s2]
+execute store result score @s zy.n3 if entity @e[tag=zy.owned,tag=zy.s3]
+execute store result score @s zy.n4 if entity @e[tag=zy.owned,tag=zy.s4]
+execute store result score @s zy.n5 if entity @e[tag=zy.owned,tag=zy.s5]
+execute store result score @s zy.n6 if entity @e[tag=zy.owned,tag=zy.s6]
+execute store result score @s zy.n7 if entity @e[tag=zy.owned,tag=zy.s7]
+execute store result score @s zy.n8 if entity @e[tag=zy.owned,tag=zy.s8]
+execute store result score @s zy.ndorm if entity @e[tag=zy.owned,tag=zy.dormant]
+execute store result score @s zy.hov if entity @e[tag=zy.owned,scores={zy.over=1..}]
+execute if score @s zy.count matches 6.. run advancement grant @s only zy:zyon/full_net

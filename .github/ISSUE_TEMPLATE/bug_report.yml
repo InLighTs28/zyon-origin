@@ -1,0 +1,57 @@
+name: 🐞 Bug report
+description: Something does not work as it should in ZyoN.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the network stable! Please fill in what you can — English or French are both fine.
+  - type: input
+    id: version
+    attributes:
+      label: ZyoN version
+      description: Datapack and resource pack version (they must match).
+      placeholder: "1.0.0-beta.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is affected?
+      options:
+        - Seals / network / dial
+        - Pulse / Oath / Shatter
+        - Flux / Sync / incidents
+        - Augments / skill tree / tiers
+        - HUD / visuals / sounds
+        - Multiplayer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Tier 5, 3 seals placed
+        2. Shatter the Life seal on a zombie
+        3. ...
+  - type: input
+    id: setup
+    attributes:
+      label: Setup
+      description: Minecraft / NeoForge / Origins / Apoli versions, other big mods, single player or server.
+      placeholder: "1.21.1, NeoForge 21.1.x, Origins 1.52, Apoli 1.132, single player"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: Attach or paste `logs/latest.log` (drag the file here). Screenshots or videos help a lot.

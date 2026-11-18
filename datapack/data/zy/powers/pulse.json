@@ -1,0 +1,203 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "cooldown": 20,
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:sneaking"
+      },
+      {
+        "type": "apoli:key_pressed",
+        "key": {
+          "key": "key.origins.ternary_active"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:execute_command",
+        "command": "function zy:core/pulse"
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.pulse",
+          "comparison": ">=",
+          "compare_to": 99
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "apoli:custom",
+                "texture": "zy:textures/particle/ring.png",
+                "lifetime": 16,
+                "size": 0.4,
+                "end_size": 6.0,
+                "color": "#ffc040",
+                "end_color": "#ffc04000",
+                "friction": 0.0,
+                "physics": false,
+                "emissive": true,
+                "blend": "additive",
+                "easing": "ease_out_quad"
+              },
+              "count": 1,
+              "speed": 0.0,
+              "force": true,
+              "spread": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "offset_y": 1.0
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "apoli:custom",
+                "texture": "zy:textures/particle/spark.png",
+                "frames": 4,
+                "frame_time": 2,
+                "loop_frames": true,
+                "lifetime": 16,
+                "lifetime_variation": 8,
+                "size": 0.1,
+                "size_variation": 0.05,
+                "end_size": 0.0,
+                "color": "#ffe090",
+                "end_color": "#ffe09000",
+                "gravity": 0.01,
+                "friction": 0.9,
+                "physics": false,
+                "emissive": true,
+                "blend": "additive"
+              },
+              "count": 40,
+              "speed": 0.25,
+              "force": true,
+              "spread": {
+                "x": 0.6,
+                "y": 0.8,
+                "z": 0.6
+              },
+              "offset_y": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "apoli:scoreboard",
+          "objective": "zy.oath",
+          "comparison": ">=",
+          "compare_to": 159
+        },
+        "if_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "apoli:custom",
+                "texture": "zy:textures/particle/ring.png",
+                "lifetime": 24,
+                "size": 0.4,
+                "end_size": 9.0,
+                "color": "#c896ff",
+                "end_color": "#c896ff00",
+                "friction": 0.0,
+                "physics": false,
+                "emissive": true,
+                "blend": "additive",
+                "easing": "ease_out_quad"
+              },
+              "count": 1,
+              "speed": 0.0,
+              "force": true,
+              "spread": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "offset_y": 1.0
+            },
+            {
+              "type": "apoli:spawn_particles",
+              "particle": {
+                "type": "apoli:custom",
+                "texture": "zy:textures/particle/hex.png",
+                "lifetime": 14,
+                "lifetime_variation": 6,
+                "size": 0.16,
+                "size_variation": 0.06,
+                "end_size": 0.0,
+                "color": "#e0b0ff",
+                "end_color": "#e0b0ff00",
+                "friction": 0.86,
+                "roll": "rUni(0, 360)",
+                "roll_speed": "rNor(0, 8)",
+                "physics": false,
+                "emissive": true,
+                "blend": "additive"
+              },
+              "count": 60,
+              "speed": 0.3,
+              "force": true,
+              "spread": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "offset_y": 1.0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "name": {
+    "translate": "zy.power.pulse.name",
+    "fallback": "§bPulse"
+  },
+  "description": {
+    "translate": "zy.power.pulse.desc",
+    "fallback": "§7Controlled surge. At the peak, the §dOath§7: total sync, then §ccascade collapse§7."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/tier.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/increase_decrease.png",
+      "text": {
+        "translate": "zy.badge.pulse.pulse",
+        "fallback": "§d§lPULSE · TIER 5\n§fSneak + secondary §8→ §7trigger\n§fCost §8→ §76 hunger\n§fEffect §8→ §7transfers 100% for 5 s\n§fCooldown §8→ §730 s"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/ultimate.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/ultimate.png",
+      "text": {
+        "translate": "zy.badge.pulse.oath",
+        "fallback": "§e§lOATH · TIER 7\n§fCondition §8→ §76 active seals\n§fEffect §8→ §78 s of perfect network\n§fThen §8→ §7§cevery seal shatters\n§fLockout §8→ §7Siphon only, 60 s"
+      }
+    }
+  ]
+}

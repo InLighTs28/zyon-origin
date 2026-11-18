@@ -1,0 +1,20 @@
+{
+  "type": "apoli:action_on_callback",
+  "hidden": true,
+  "entity_action_added": {
+    "type": "apoli:execute_command",
+    "command": "scoreboard players set @s zy.a12 1"
+  },
+  "entity_action_gained": {
+    "type": "apoli:execute_command",
+    "command": "scoreboard players set @s zy.a12 1"
+  },
+  "entity_action_removed": {
+    "type": "apoli:execute_command",
+    "command": "scoreboard players set @s zy.a12 0"
+  },
+  "entity_action_lost": {
+    "type": "apoli:execute_command",
+    "command": "scoreboard players set @s zy.a12 0"
+  }
+}

@@ -1,0 +1,2529 @@
+{
+  "type": "apoli:multiple",
+  "hidden": true,
+  "lock": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "oath": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "pulse": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "pcd": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "charge": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "event": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "drift": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "integ": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "ess": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "tn": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 20,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "fx": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "draw": {
+    "type": "apoli:overlay",
+    "overlays": [
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_lock) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_lock) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.35,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 0
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_lock) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_lock) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.35,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_lock) - 100 * floor(resource(zy:hud/chrono_lock) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_lock) - 100 * floor(resource(zy:hud/chrono_lock) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_lock) - 100 * floor(resource(zy:hud/chrono_lock) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_lock) - 100 * floor(resource(zy:hud/chrono_lock) / 100)) / 60))",
+        "red": 1.0,
+        "green": 0.35,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_lock) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) + 90) / 100)",
+        "red": 1.0,
+        "green": 0.35,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) + 98) / 99)",
+        "red": 1.0,
+        "green": 0.35,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_lock) / 10000) - 10 * floor(resource(zy:hud/chrono_lock) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_lock) / 100) - 100 * floor(resource(zy:hud/chrono_lock) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_lock",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_oath) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_oath) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 0.86,
+        "green": 0.47,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 12
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_oath) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_oath) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 0.86,
+        "green": 0.47,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_oath) - 100 * floor(resource(zy:hud/chrono_oath) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_oath) - 100 * floor(resource(zy:hud/chrono_oath) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_oath) - 100 * floor(resource(zy:hud/chrono_oath) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_oath) - 100 * floor(resource(zy:hud/chrono_oath) / 100)) / 60))",
+        "red": 0.86,
+        "green": 0.47,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_oath) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) + 90) / 100)",
+        "red": 0.86,
+        "green": 0.47,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) + 98) / 99)",
+        "red": 0.86,
+        "green": 0.47,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_oath) / 10000) - 10 * floor(resource(zy:hud/chrono_oath) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_oath) / 100) - 100 * floor(resource(zy:hud/chrono_oath) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_oath",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_pulse) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_pulse) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.75,
+        "blue": 0.25,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 24
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_pulse) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_pulse) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.75,
+        "blue": 0.25,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_pulse) - 100 * floor(resource(zy:hud/chrono_pulse) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_pulse) - 100 * floor(resource(zy:hud/chrono_pulse) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_pulse) - 100 * floor(resource(zy:hud/chrono_pulse) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_pulse) - 100 * floor(resource(zy:hud/chrono_pulse) / 100)) / 60))",
+        "red": 1.0,
+        "green": 0.75,
+        "blue": 0.25,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_pulse) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) + 90) / 100)",
+        "red": 1.0,
+        "green": 0.75,
+        "blue": 0.25,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) + 98) / 99)",
+        "red": 1.0,
+        "green": 0.75,
+        "blue": 0.25,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_pulse) / 10000) - 10 * floor(resource(zy:hud/chrono_pulse) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pulse) / 100) - 100 * floor(resource(zy:hud/chrono_pulse) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pulse",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.36 + (0.640) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "green": "(0.88 + (0.120) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "blue": "(0.9 + (0.100) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 36
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.36 + (0.640) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "green": "(0.88 + (0.120) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "blue": "(0.9 + (0.100) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_pcd) - 100 * floor(resource(zy:hud/chrono_pcd) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_pcd) - 100 * floor(resource(zy:hud/chrono_pcd) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_pcd) - 100 * floor(resource(zy:hud/chrono_pcd) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_pcd) - 100 * floor(resource(zy:hud/chrono_pcd) / 100)) / 60))",
+        "red": "(0.36 + (0.640) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "green": "(0.88 + (0.120) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "blue": "(0.9 + (0.100) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) + 90) / 100)",
+        "red": "(0.36 + (0.640) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "green": "(0.88 + (0.120) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "blue": "(0.9 + (0.100) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) + 98) / 99)",
+        "red": "(0.36 + (0.640) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "green": "(0.88 + (0.120) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "blue": "(0.9 + (0.100) * (floor(resource(zy:hud/chrono_pcd) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_pcd) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_pcd) / 10000) - 10 * floor(resource(zy:hud/chrono_pcd) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_pcd) / 100) - 100 * floor(resource(zy:hud/chrono_pcd) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_pcd",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.45 + (0.550) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "green": "(0.95 + (-0.360) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "blue": "(1.0 + (-0.840) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 48
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.45 + (0.550) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "green": "(0.95 + (-0.360) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "blue": "(1.0 + (-0.840) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_charge) - 100 * floor(resource(zy:hud/chrono_charge) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_charge) - 100 * floor(resource(zy:hud/chrono_charge) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_charge) - 100 * floor(resource(zy:hud/chrono_charge) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_charge) - 100 * floor(resource(zy:hud/chrono_charge) / 100)) / 60))",
+        "red": "(0.45 + (0.550) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "green": "(0.95 + (-0.360) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "blue": "(1.0 + (-0.840) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_charge) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) + 90) / 100)",
+        "red": "(0.45 + (0.550) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "green": "(0.95 + (-0.360) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "blue": "(1.0 + (-0.840) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) + 98) / 99)",
+        "red": "(0.45 + (0.550) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "green": "(0.95 + (-0.360) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "blue": "(1.0 + (-0.840) * (floor(resource(zy:hud/chrono_charge) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_charge) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_charge) / 10000) - 10 * floor(resource(zy:hud/chrono_charge) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_charge) / 100) - 100 * floor(resource(zy:hud/chrono_charge) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_charge",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_event) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "green": "(0.8 + (-0.580) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "blue": "(0.2 + (0.020) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_event) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "green": "(0.8 + (-0.580) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "blue": "(0.2 + (0.020) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_event) - 100 * floor(resource(zy:hud/chrono_event) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_event) - 100 * floor(resource(zy:hud/chrono_event) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_event) - 100 * floor(resource(zy:hud/chrono_event) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_event) - 100 * floor(resource(zy:hud/chrono_event) / 100)) / 60))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "green": "(0.8 + (-0.580) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "blue": "(0.2 + (0.020) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_event) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) + 90) / 100)",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "green": "(0.8 + (-0.580) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "blue": "(0.2 + (0.020) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) + 98) / 99)",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "green": "(0.8 + (-0.580) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "blue": "(0.2 + (0.020) * (floor(resource(zy:hud/chrono_event) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_event) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_event) / 10000) - 10 * floor(resource(zy:hud/chrono_event) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_event) / 100) - 100 * floor(resource(zy:hud/chrono_event) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_event",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "green": "(0.62 + (-0.370) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "blue": "(0.22 + (0.030) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 72
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "green": "(0.62 + (-0.370) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "blue": "(0.22 + (0.030) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_drift) - 100 * floor(resource(zy:hud/chrono_drift) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_drift) - 100 * floor(resource(zy:hud/chrono_drift) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_drift) - 100 * floor(resource(zy:hud/chrono_drift) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_drift) - 100 * floor(resource(zy:hud/chrono_drift) / 100)) / 60))",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "green": "(0.62 + (-0.370) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "blue": "(0.22 + (0.030) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_drift) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) + 90) / 100)",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "green": "(0.62 + (-0.370) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "blue": "(0.22 + (0.030) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) + 98) / 99)",
+        "red": "(1.0 + (0.000) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "green": "(0.62 + (-0.370) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "blue": "(0.22 + (0.030) * (floor(resource(zy:hud/chrono_drift) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_drift) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_drift) / 10000) - 10 * floor(resource(zy:hud/chrono_drift) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_drift) / 100) - 100 * floor(resource(zy:hud/chrono_drift) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_drift",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.4 + (0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "green": "(1.0 + (-0.280) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "blue": "(0.8 + (-0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 84
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": "(0.4 + (0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "green": "(1.0 + (-0.280) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "blue": "(0.8 + (-0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_integ) - 100 * floor(resource(zy:hud/chrono_integ) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_integ) - 100 * floor(resource(zy:hud/chrono_integ) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_integ) - 100 * floor(resource(zy:hud/chrono_integ) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_integ) - 100 * floor(resource(zy:hud/chrono_integ) / 100)) / 60))",
+        "red": "(0.4 + (0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "green": "(1.0 + (-0.280) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "blue": "(0.8 + (-0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_integ) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) + 90) / 100)",
+        "red": "(0.4 + (0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "green": "(1.0 + (-0.280) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "blue": "(0.8 + (-0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) + 98) / 99)",
+        "red": "(0.4 + (0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "green": "(1.0 + (-0.280) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "blue": "(0.8 + (-0.600) * (floor(resource(zy:hud/chrono_integ) / 100000) - 2 * floor(floor(resource(zy:hud/chrono_integ) / 100000) / 2)))",
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_integ) / 10000) - 10 * floor(resource(zy:hud/chrono_integ) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_integ) / 100) - 100 * floor(resource(zy:hud/chrono_integ) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_integ",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/icons.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 6,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 12,
+        "height": 12,
+        "region_width": 12,
+        "region_height": 12,
+        "texture_width": 12,
+        "texture_height": 108,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_ess) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_ess) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.88,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 96
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/bar.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 21,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 62,
+        "height": 6,
+        "region_width": 62,
+        "region_height": 6,
+        "texture_width": 62,
+        "texture_height": 366,
+        "strength": "(1 - 0.65 * (floor(floor(resource(zy:hud/chrono_ess) / 100000) / 2) - 2 * floor(floor(resource(zy:hud/chrono_ess) / 100000) / 4)) * resource(zy:hud/chrono_fx))",
+        "red": 1.0,
+        "green": 0.88,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "(resource(zy:hud/chrono_ess) - 100 * floor(resource(zy:hud/chrono_ess) / 100)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/spark.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": "19 + (resource(zy:hud/chrono_ess) - 100 * floor(resource(zy:hud/chrono_ess) / 100))",
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 6,
+        "height": 6,
+        "region_width": 6,
+        "region_height": 6,
+        "texture_width": 6,
+        "texture_height": 36,
+        "strength": "0.9 * floor(((resource(zy:hud/chrono_ess) - 100 * floor(resource(zy:hud/chrono_ess) / 100)) + 59) / 60) * (1 - floor((resource(zy:hud/chrono_ess) - 100 * floor(resource(zy:hud/chrono_ess) / 100)) / 60))",
+        "red": 1.0,
+        "green": 0.88,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/ready.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 4,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 16,
+        "height": 16,
+        "region_width": 16,
+        "region_height": 16,
+        "texture_width": 16,
+        "texture_height": 128,
+        "strength": "floor(floor(resource(zy:hud/chrono_ess) / 100000) / 4)",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        }
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 86,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) + 90) / 100)",
+        "red": 1.0,
+        "green": 0.88,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "floor((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) / 10) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 90,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) + 98) / 99)",
+        "red": 1.0,
+        "green": 0.88,
+        "blue": 0.35,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": "((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) - 10 * floor((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) / 10)) * 6"
+      },
+      {
+        "texture": "zy:textures/gui/hud/chrono/digits.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true,
+        "anchor": "left",
+        "x": 94,
+        "y": "((floor(resource(zy:hud/chrono_ess) / 10000) - 10 * floor(resource(zy:hud/chrono_ess) / 100000)) - (resource(zy:hud/chrono_tn) + 1) / 2) * 14",
+        "width": 4,
+        "height": 6,
+        "region_width": 4,
+        "region_height": 6,
+        "texture_width": 4,
+        "texture_height": 66,
+        "strength": "floor(((floor(resource(zy:hud/chrono_ess) / 100) - 100 * floor(resource(zy:hud/chrono_ess) / 10000)) + 98) / 99)",
+        "red": 0.6,
+        "green": 0.6,
+        "blue": 0.6,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/chrono_ess",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "u": 0,
+        "v": 60
+      }
+    ]
+  }
+}

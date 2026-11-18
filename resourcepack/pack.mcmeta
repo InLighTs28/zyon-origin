@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 34,
+    "description": {
+      "translate": "zy.pack.resources",
+      "fallback": "§b§lZYON §8» §fResources\n§7EN/FR · HUD · seals"
+    }
+  }
+}

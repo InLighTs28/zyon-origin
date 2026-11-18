@@ -1,0 +1,10 @@
+scoreboard players operation tier zy.dbg = @s zy.tier
+scoreboard players operation resonance zy.dbg = @s zy.res
+scoreboard players operation seals zy.dbg = @s zy.count
+scoreboard players operation cap zy.dbg = @s zy.cap
+scoreboard players operation siphons zy.dbg = @s zy.siphons
+scoreboard players operation range zy.dbg = @s zy.range
+scoreboard players operation transfer% zy.dbg = @s zy.rate
+scoreboard players operation dormant zy.dbg = @s zy.ndorm
+scoreboard players operation flux zy.dbg = @s zy.food
+scoreboard players operation hold zy.dbg = @s zy.hold

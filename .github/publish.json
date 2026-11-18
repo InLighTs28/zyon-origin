@@ -1,0 +1,21 @@
+{
+  "game_version": "1.21.1",
+  "release_type": "beta",
+  "curseforge": {
+    "datapack_id": 0,
+    "resourcepack_id": 0,
+    "game_version_ids": [11779]
+  },
+  "modrinth": {
+    "datapack_id": "",
+    "resourcepack_id": ""
+  },
+  "names": {
+    "datapack": "ZyoN",
+    "resourcepack": "ZyoN - Resources"
+  },
+  "files": {
+    "datapack": "ZyoN-Datapack",
+    "resourcepack": "ZyoN-ResourcePack"
+  }
+}

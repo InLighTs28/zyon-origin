@@ -1,0 +1,30 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.stableoath.n",
+    "fallback": "Stable Oath"
+  },
+  "description": {
+    "translate": "zy.aug.stableoath.d",
+    "fallback": "After the Great Oath, the core is drained for 30 s instead of 60 s. Excludes Quick Pulse."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/ultimate.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "challenge",
+  "cost": {
+    "points": 4
+  },
+  "placement": [
+    7.5,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/stableoath"
+  ],
+  "excludes": [
+    "zy:quickpulse"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lodestone"
+    },
+    "title": {
+      "translate": "zy.adv.anchor.t",
+      "fallback": "Recall"
+    },
+    "description": {
+      "translate": "zy.adv.anchor.d",
+      "fallback": "Shatter an Anchor to pull a being back to you."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/tier_6"
+}

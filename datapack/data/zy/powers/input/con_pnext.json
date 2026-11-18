@@ -1,0 +1,17 @@
+{
+  "type": "apoli:action_on_key_press",
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "condition": {
+    "type": "apoli:key_pressed",
+    "key": {
+      "key": "key.origins.ternary_active"
+    }
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:rcon/next"
+  },
+  "hidden": true
+}

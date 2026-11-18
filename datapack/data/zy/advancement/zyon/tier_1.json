@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "title": {
+      "translate": "zy.adv.tier_1.t",
+      "fallback": "First Spark"
+    },
+    "description": {
+      "translate": "zy.adv.tier_1.d",
+      "fallback": "Tier 1 · Someone else's Flux finally runs through your empty circuit."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/root"
+}

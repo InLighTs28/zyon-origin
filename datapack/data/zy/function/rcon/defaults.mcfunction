@@ -1,0 +1,17 @@
+execute unless score @s zy.p0 matches 0.. run scoreboard players set @s zy.p0 4
+execute unless score @s zy.p1 matches 0.. run scoreboard players set @s zy.p1 3
+execute unless score @s zy.p2 matches 0.. run scoreboard players set @s zy.p2 4
+execute unless score @s zy.p3 matches 0.. run scoreboard players set @s zy.p3 0
+execute unless score @s zy.p4 matches 0.. run scoreboard players set @s zy.p4 0
+execute unless score @s zy.p5 matches 0.. run scoreboard players set @s zy.p5 1
+execute unless score @s zy.p6 matches 0.. run scoreboard players set @s zy.p6 0
+execute unless score @s zy.p7 matches 0.. run scoreboard players set @s zy.p7 1
+execute unless score @s zy.p8 matches 0.. run scoreboard players set @s zy.p8 4
+execute unless score @s zy.p9 matches 0.. run scoreboard players set @s zy.p9 4
+execute unless score @s zy.p10 matches 0.. run scoreboard players set @s zy.p10 4
+execute unless score @s zy.p11 matches 0.. run scoreboard players set @s zy.p11 4
+execute unless score @s zy.p12 matches 0.. run scoreboard players set @s zy.p12 2
+execute unless score @s zy.p13 matches 0.. run scoreboard players set @s zy.p13 0
+execute unless score @s zy.p14 matches 0.. run scoreboard players set @s zy.p14 0
+execute unless score @s zy.p15 matches 0.. run scoreboard players set @s zy.p15 1
+execute unless score @s zy.p16 matches 0.. run scoreboard players set @s zy.p16 0

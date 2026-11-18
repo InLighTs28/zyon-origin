@@ -1,0 +1,30 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.quickpulse.n",
+    "fallback": "Quick Pulse"
+  },
+  "description": {
+    "translate": "zy.aug.quickpulse.d",
+    "fallback": "Pulse recharges in 20 s instead of 30 s. Excludes Stable Oath."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/ultimate.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    6.5,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/quickpulse"
+  ],
+  "excludes": [
+    "zy:stableoath"
+  ]
+}

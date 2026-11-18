@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:redstone"
+    },
+    "title": {
+      "translate": "zy.adv.collapse.t",
+      "fallback": "Signal Lost"
+    },
+    "description": {
+      "translate": "zy.adv.collapse.d",
+      "fallback": "Let a dormant seal collapse and take the backlash."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/relay"
+}

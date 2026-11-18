@@ -1,0 +1,95 @@
+{
+  "name": {
+    "text": "",
+    "extra": [
+      {
+        "text": "",
+        "font": "zy:ui",
+        "color": "white"
+      },
+      {
+        "text": "",
+        "font": "zy:glitch_logo",
+        "color": "white",
+        "obfuscated": true
+      }
+    ]
+  },
+  "description": {
+    "text": "",
+    "extra": [
+      {
+        "translate": "zy.origin.zyon.banner",
+        "fallback": "",
+        "font": "zy:glitch_banner",
+        "color": "white",
+        "obfuscated": true
+      },
+      {
+        "translate": "zy.origin.zyon.desc",
+        "fallback": "\n\n\n§c▌ §7ROLE §fnetwork operator\n§c▌ §7TYPE §finverse Radiant\n§c▌ §7THREAT §c■■■■■\n\n§7Lays circles of light beneath the living and routes them as one network: what hits one hits all.\n\n§8» §7Never heals alone.\n§8» §7Never idles.\n§8» §7To stop is to fade."
+      }
+    ]
+  },
+  "icon": {
+    "id": "minecraft:leather_horse_armor",
+    "components": {
+      "minecraft:custom_model_data": 7150
+    }
+  },
+  "order": 100,
+  "impact": 3,
+  "powers": [
+    "zy:void",
+    "zy:place",
+    "zy:shatter",
+    "zy:wheel",
+    "zy:swap",
+    "zy:pulse",
+    "zy:lore/sync",
+    "zy:lore/network",
+    "zy:lore/hud",
+    "zy:lore/seals",
+    "zy:lore/resonance",
+    "zy:lore/dossier",
+    "zy:lifecycle",
+    "zy:famine",
+    "zy:hollow_heal",
+    "zy:touch",
+    "zy:cycle_next",
+    "zy:cycle_prev",
+    "zy:input/dial_left",
+    "zy:input/dial_right",
+    "zy:input/con_up",
+    "zy:input/con_down",
+    "zy:input/con_tab",
+    "zy:input/freeze",
+    "zy:engine",
+    "zy:sight",
+    "zy:hud/view",
+    "zy:hud/flux",
+    "zy:hud/res",
+    "zy:hud/sync",
+    "zy:hud/tier",
+    "zy:hud/cap",
+    "zy:hud/used",
+    "zy:hud/siph",
+    "zy:hud/sel",
+    "zy:hud/charge",
+    "zy:hud/hold",
+    "zy:hud/alert",
+    "zy:hud/mode",
+    "zy:hud/timer",
+    "zy:hud/pready",
+    "zy:hud/dial",
+    "zy:hud/cons",
+    "zy:hud/pcur",
+    "zy:hud/frame",
+    "zy:hud/alerts",
+    "zy:hud/chrono",
+    "zy:hud/text",
+    "zy:fx/ambient",
+    "zy:aug/points",
+    "zy:aug/reset"
+  ]
+}

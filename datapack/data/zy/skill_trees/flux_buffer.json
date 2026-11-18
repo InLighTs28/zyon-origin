@@ -1,0 +1,28 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.flux_buffer.n",
+    "fallback": "Flux Buffer"
+  },
+  "description": {
+    "translate": "zy.aug.flux_buffer.d",
+    "fallback": "Food restores 40% instead of 25%."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/cost.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 1
+  },
+  "placement": [
+    0,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/flux_buffer",
+    "zy:aug/flux_buffer"
+  ]
+}

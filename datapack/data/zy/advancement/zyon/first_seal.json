@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:glow_ink_sac"
+    },
+    "title": {
+      "translate": "zy.adv.first_seal.t",
+      "fallback": "First Seal"
+    },
+    "description": {
+      "translate": "zy.adv.first_seal.d",
+      "fallback": "Draw your first circle of light beneath a living being."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "zy:zyon/root"
+}

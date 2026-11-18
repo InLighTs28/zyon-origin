@@ -1,0 +1,27 @@
+{
+  "parent": "zy:jammer",
+  "name": {
+    "translate": "zy.aug.breaker.n",
+    "fallback": "Circuit Breaker"
+  },
+  "description": {
+    "translate": "zy.aug.breaker.d",
+    "fallback": "Backlash from collapsed or cut links is halved."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/key.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "goal",
+  "cost": {
+    "points": 3
+  },
+  "placement": [
+    0,
+    3
+  ],
+  "powers": [
+    "zy:aug/flag/breaker"
+  ]
+}

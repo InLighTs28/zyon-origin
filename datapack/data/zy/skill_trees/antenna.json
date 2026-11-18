@@ -1,0 +1,27 @@
+{
+  "parent": "zy:zyon",
+  "name": {
+    "translate": "zy.aug.antenna.n",
+    "fallback": "Long-Range Antenna"
+  },
+  "description": {
+    "translate": "zy.aug.antenna.d",
+    "fallback": "+4 blocks of network range."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/tier.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    2,
+    0
+  ],
+  "powers": [
+    "zy:aug/flag/antenna"
+  ]
+}

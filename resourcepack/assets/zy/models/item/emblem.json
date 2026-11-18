@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "zy:item/blank",
+    "layer1": "zy:item/emblem"
+  }
+}

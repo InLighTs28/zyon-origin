@@ -1,0 +1,20 @@
+{
+  "type": "apoli:active_self",
+  "name": "Impulsion et Grand Serment",
+  "description": "Accroupi + touche secondaire. Palier 5 : l'Impulsion coûte 6 points de faim et porte tous les transferts à 100 % pendant 5 s. Palier 7, avec 6 sceaux actifs : le Grand Serment. 8 secondes de réseau parfait, puis tout rompt et chaque sceau libère son contenu. Ensuite, seul le Siphon répond pendant une minute.",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "cooldown": 20,
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "apoli:sneaking"
+  },
+  "entity_action": {
+    "type": "apoli:execute_command",
+    "command": "function zy:z/impulsion"
+  }
+}

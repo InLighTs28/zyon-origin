@@ -1,0 +1,22 @@
+{
+  "type": "apoli:simple",
+  "name": {
+    "translate": "zy.power.shatter.name",
+    "fallback": "§bShatter"
+  },
+  "description": {
+    "translate": "zy.power.shatter.desc",
+    "fallback": "§7Forced node purge: §binstant discharge§7 of the seal's buffer."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/key.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
+      "text": {
+        "translate": "zy.badge.shatter.fx",
+        "fallback": "§b§lCONTROLS · EFFECTS\n§fHold 0.5 s, aim §8→ §7shatters the bearer in sight (48 m)\n§f§cLife §8→ §7stored wounds\n§f§9Momentum §8→ §7slingshot\n§f§fPerception §8→ §7exposed + blinded\n§f§eEssence §8→ §7kept 10 s\n§f§dAnchor §8→ §7recall / swap"
+      }
+    }
+  ]
+}

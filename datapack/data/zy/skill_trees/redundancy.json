@@ -1,0 +1,27 @@
+{
+  "parent": "zy:antenna",
+  "name": {
+    "translate": "zy.aug.redundancy.n",
+    "fallback": "Redundancy"
+  },
+  "description": {
+    "translate": "zy.aug.redundancy.d",
+    "fallback": "Dormant seals collapse after 60 s instead of 30 s."
+  },
+  "icon": {
+    "texture": "zy:textures/gui/badge/info.png",
+    "width": 16,
+    "height": 16
+  },
+  "frame": "task",
+  "cost": {
+    "points": 2
+  },
+  "placement": [
+    2,
+    2
+  ],
+  "powers": [
+    "zy:aug/flag/redundancy"
+  ]
+}
