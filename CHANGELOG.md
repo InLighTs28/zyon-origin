@@ -16,6 +16,12 @@ First public beta.
 - **DP** Diagonal arcs: ↖ charged hand / Essence kept · ↗ incident · ↙ drift countdown · ↘ weakest seal (last 30 s). Blink before the end.
 - **RP** Ring, arcs and ready-flash textures; new HUD diagram and legend marks C-F (EN/FR).
 
+### Sigilite, Link Emitter, Short Signal
+- **DP** Sigilite Shards from deepslate ores / amethyst clusters (8 %) and ancient debris (ZyoN only).
+- **DP** Link Emitter Mk I-IV (crafting + smithing): off-hand focus that throws the armed seal a few blocks away, no damage. Packets shown left of the crosshair.
+- **DP** Short Signal: ranged and spell damage dealt by ZyoN -40 %.
+- **RP** Shard and Emitter models/textures (animated), packet, 4 new sounds.
+
 ### Sounds
 - **RP** Every sound effect re-made from scratch (original synthesis, mono for positional audio). Kenney samples no longer used.
 

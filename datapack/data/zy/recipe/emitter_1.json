@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SAS",
+    "IWI",
+    " I "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:debug_stick"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:warped_fungus_on_a_stick"
+    }
+  },
+  "result": {
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:custom_model_data": 7311,
+      "minecraft:item_name": {
+        "translate": "zy.item.emitter.1",
+        "fallback": "Link Emitter Mk I"
+      },
+      "minecraft:lore": [
+        {
+          "translate": "zy.item.emitter.1.l1",
+          "fallback": "Iron frame · 2 packets · 6 blocks · recharge 10 s",
+          "color": "aqua",
+          "italic": false
+        },
+        {
+          "translate": "zy.item.emitter.l2",
+          "fallback": "Off-hand · ZyoN only · deals no damage",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "translate": "zy.item.emitter.l3",
+          "fallback": "Charge your hand, then right-click the air: the armed seal flies.",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "minecraft:rarity": "common",
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:custom_data": "{zy:{emitter:1}}"
+    }
+  }
+}

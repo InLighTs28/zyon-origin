@@ -87,6 +87,13 @@ scoreboard objectives add zy.ntot dummy
 scoreboard objectives add zy.view dummy
 scoreboard objectives add zy.hpcd dummy
 scoreboard objectives add zy.hrdy dummy
+scoreboard objectives add zy.use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add zy.qemit dummy
+scoreboard objectives add zy.pstep dummy
+scoreboard objectives add zy.ehit dummy
+scoreboard objectives add zy.ecd dummy
+scoreboard objectives add zy.epk dummy
+scoreboard objectives add zy.etier dummy
 scoreboard objectives add zy.qring dummy
 scoreboard objectives add zy.qtl dummy
 scoreboard objectives add zy.qtr dummy

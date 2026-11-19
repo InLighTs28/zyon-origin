@@ -1,0 +1,209 @@
+{
+  "type": "apoli:multiple",
+  "name": {
+    "translate": "zy.power.emitter.name",
+    "fallback": "§bLink Emitter"
+  },
+  "description": {
+    "translate": "zy.power.emitter.desc",
+    "fallback": "§7An off-hand focus forged from Sigilite. It throws your armed seal a few blocks away: §fno damage§7, only reach. Contact sealing stays free."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/key.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
+      "text": {
+        "translate": "zy.badge.emitter.use",
+        "fallback": "§b§lUSE\n§fEmitter in the off-hand\n§fCharge your hand §8→ §7right-click the air\n§fThe packet §8→ §7seals (or shatters) the first being it touches\n§fAlready sealed §8→ §7refreshed at range\n§fCost §8→ §71 packet + Flux\n§fPackets §8→ §7diamonds left of the crosshair, refill over time"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/tier.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/star.png",
+      "text": {
+        "translate": "zy.badge.emitter.tiers",
+        "fallback": "§e§lTIERS\n§fMk I §8(Iron) §8→ §72 packets · 6 blocks · 10 s · 2 Flux\n§fMk II §8(Gold) §8→ §73 packets · 8 blocks · 8 s · 2 Flux\n§fMk III §8(Diamond) §8→ §73 packets · 10 blocks · 7 s · 1.5 Flux\n§fMk IV §8(Netherite) §8→ §74 packets · 12 blocks · 5 s · 1 Flux"
+      }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/cost.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/recipe.png",
+      "text": {
+        "translate": "zy.badge.emitter.craft",
+        "fallback": "§d§lFORGE\n§fMk I §8→ §7crafting table: 2 Sigilite, amethyst, 3 iron, warped fungus on a stick\n§fMk II §8→ §7smithing: Sigilite + Mk I + gold block\n§fMk III §8→ §7smithing: Sigilite + Mk II + diamond\n§fMk IV §8→ §7smithing: netherite template + Mk III + netherite ingot"
+      }
+    }
+  ],
+  "hit": {
+    "type": "apoli:action_over_time",
+    "interval": 1,
+    "condition": {
+      "type": "apoli:scoreboard",
+      "objective": "zy.ehit",
+      "comparison": ">=",
+      "compare_to": 1
+    },
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "function zy:emitter/apply"
+        },
+        {
+          "type": "apoli:selector_action",
+          "selector": "@a[tag=zy.mounthost]",
+          "bientity_action": {
+            "type": "apoli:target_action",
+            "action": {
+              "type": "apoli:selector_action",
+              "selector": "@e[type=item_display,tag=zy.mountme]",
+              "bientity_action": {
+                "type": "apoli:invert",
+                "action": {
+                  "type": "apoli:mount",
+                  "force": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "function zy:ring/mount_done"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp0] remove zy.fxp0"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp1] remove zy.fxp1"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp2] remove zy.fxp2"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp3] remove zy.fxp3"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp4] remove zy.fxp4"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp5] remove zy.fxp5"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp6] remove zy.fxp6"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp7] remove zy.fxp7"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @e[tag=zy.fxp8] remove zy.fxp8"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 999,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "draw": {
+    "type": "apoli:overlay",
+    "overlays": [
+      {
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": false,
+        "anchor": "center",
+        "x": 0,
+        "width": 96,
+        "height": 96,
+        "u": 0,
+        "region_width": 96,
+        "region_height": 96,
+        "red": 0.75,
+        "green": 0.55,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:emitter_ui",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "texture": "zy:textures/gui/hud/chrono/emit_pips.png",
+        "y": 0,
+        "v": "(floor(resource(zy:emitter_ui) / 100) * 5 + (floor(resource(zy:emitter_ui) / 10) - 10 * floor(resource(zy:emitter_ui) / 100))) * 96",
+        "texture_width": 96,
+        "texture_height": 2400,
+        "strength": 1.0
+      },
+      {
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": false,
+        "anchor": "center",
+        "x": 0,
+        "width": 96,
+        "height": 96,
+        "u": 0,
+        "region_width": 96,
+        "region_height": 96,
+        "red": 0.75,
+        "green": 0.55,
+        "blue": 1.0,
+        "condition": {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:resource",
+              "resource": "zy:hud/view",
+              "comparison": ">=",
+              "compare_to": 1
+            },
+            {
+              "type": "apoli:resource",
+              "resource": "zy:emitter_ui",
+              "comparison": ">",
+              "compare_to": 0
+            }
+          ]
+        },
+        "texture": "zy:textures/gui/hud/chrono/emit_pip.png",
+        "v": 0,
+        "texture_width": 96,
+        "texture_height": 96,
+        "y": "((floor(resource(zy:emitter_ui) / 100) - 1) / 2 - (floor(resource(zy:emitter_ui) / 10) - 10 * floor(resource(zy:emitter_ui) / 100))) * 6",
+        "strength": "0.15 + 0.06 * (resource(zy:emitter_ui) - 10 * floor(resource(zy:emitter_ui) / 10))"
+      }
+    ]
+  }
+}

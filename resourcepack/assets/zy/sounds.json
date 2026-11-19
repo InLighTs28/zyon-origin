@@ -1,348 +1,384 @@
 {
- "ui.blip": {
-  "sounds": [
-   {
-    "name": "zy:select_004",
-    "volume": 0.7,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:select_006",
-    "volume": 0.7,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:tick_004",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.click": {
-  "sounds": [
-   {
-    "name": "zy:click_003",
-    "volume": 0.8,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:click_004",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.tick": {
-  "sounds": [
-   {
-    "name": "zy:tick_002",
-    "volume": 0.8,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:tick_004",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.select": {
-  "sounds": [
-   {
-    "name": "zy:select_007",
-    "volume": 0.8,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:select_008",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.switch": {
-  "sounds": [
-   {
-    "name": "zy:switch_005",
-    "volume": 0.7,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:switch_007",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.drop": {
-  "sounds": [
-   {
-    "name": "zy:drop_003",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.reward": {
-  "sounds": [
-   {
-    "name": "zy:ui_reward",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.open": {
-  "sounds": [
-   {
-    "name": "zy:ui_open",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.close": {
-  "sounds": [
-   {
-    "name": "zy:ui_close",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "seal.place": {
-  "sounds": [
-   {
-    "name": "zy:seal_place",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "seal.charge": {
-  "sounds": [
-   {
-    "name": "zy:seal_charge",
-    "volume": 0.6,
-    "pitch": 1.0
-   }
-  ]
- },
- "seal.resist": {
-  "sounds": [
-   {
-    "name": "zy:seal_resist",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "seal.shatter": {
-  "sounds": [
-   {
-    "name": "zy:seal_shatter",
-    "volume": 1.0,
-    "pitch": 1.0
-   }
-  ]
- },
- "seal.dissolve": {
-  "sounds": [
-   {
-    "name": "zy:seal_dissolve",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.confirm": {
-  "sounds": [
-   {
-    "name": "zy:net_confirm",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.up": {
-  "sounds": [
-   {
-    "name": "zy:net_up",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.down": {
-  "sounds": [
-   {
-    "name": "zy:net_down",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.surge": {
-  "sounds": [
-   {
-    "name": "zy:net_surge",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.hum": {
-  "sounds": [
-   {
-    "name": "zy:net_hum",
-    "volume": 0.4,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.backlash": {
-  "sounds": [
-   {
-    "name": "zy:net_backlash",
-    "volume": 1.0,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.burst": {
-  "sounds": [
-   {
-    "name": "zy:net_burst",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.spike": {
-  "sounds": [
-   {
-    "name": "zy:net_spike",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.warp": {
-  "sounds": [
-   {
-    "name": "zy:net_warp",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.anchor": {
-  "sounds": [
-   {
-    "name": "zy:net_anchor",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "net.boot": {
-  "sounds": [
-   {
-    "name": "zy:net_boot",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "oath.break": {
-  "sounds": [
-   {
-    "name": "zy:oath_break",
-    "volume": 1.0,
-    "pitch": 1.0
-   }
-  ]
- },
- "tier.up": {
-  "sounds": [
-   {
-    "name": "zy:tier_up",
-    "volume": 1.0,
-    "pitch": 1.0
-   }
-  ]
- },
- "alert.glitch": {
-  "sounds": [
-   {
-    "name": "zy:glitch_001",
-    "volume": 0.9,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:glitch_003",
-    "volume": 0.9,
-    "pitch": 1.0
-   },
-   {
-    "name": "zy:glitch_004",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "alert.critical": {
-  "sounds": [
-   {
-    "name": "zy:alert_critical",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "alert.drift": {
-  "sounds": [
-   {
-    "name": "zy:alert_drift",
-    "volume": 0.8,
-    "pitch": 1.0
-   }
-  ]
- },
- "alert.intrusion": {
-  "sounds": [
-   {
-    "name": "zy:alert_intrusion",
-    "volume": 0.9,
-    "pitch": 1.0
-   }
-  ]
- },
- "console.open": {
-  "sounds": [
-   {
-    "name": "zy:console_open",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- },
- "console.close": {
-  "sounds": [
-   {
-    "name": "zy:console_close",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- },
- "ui.page": {
-  "sounds": [
-   {
-    "name": "zy:open_004",
-    "volume": 0.7,
-    "pitch": 1.0
-   }
-  ]
- }
+  "ui.blip": {
+    "sounds": [
+      {
+        "name": "zy:select_004",
+        "volume": 0.7,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:select_006",
+        "volume": 0.7,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:tick_004",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.click": {
+    "sounds": [
+      {
+        "name": "zy:click_003",
+        "volume": 0.8,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:click_004",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.tick": {
+    "sounds": [
+      {
+        "name": "zy:tick_002",
+        "volume": 0.8,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:tick_004",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.select": {
+    "sounds": [
+      {
+        "name": "zy:select_007",
+        "volume": 0.8,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:select_008",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.switch": {
+    "sounds": [
+      {
+        "name": "zy:switch_005",
+        "volume": 0.7,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:switch_007",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.drop": {
+    "sounds": [
+      {
+        "name": "zy:drop_003",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.reward": {
+    "sounds": [
+      {
+        "name": "zy:ui_reward",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.open": {
+    "sounds": [
+      {
+        "name": "zy:ui_open",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.close": {
+    "sounds": [
+      {
+        "name": "zy:ui_close",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "seal.place": {
+    "sounds": [
+      {
+        "name": "zy:seal_place",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "seal.charge": {
+    "sounds": [
+      {
+        "name": "zy:seal_charge",
+        "volume": 0.6,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "seal.resist": {
+    "sounds": [
+      {
+        "name": "zy:seal_resist",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "seal.shatter": {
+    "sounds": [
+      {
+        "name": "zy:seal_shatter",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "seal.dissolve": {
+    "sounds": [
+      {
+        "name": "zy:seal_dissolve",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.confirm": {
+    "sounds": [
+      {
+        "name": "zy:net_confirm",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.up": {
+    "sounds": [
+      {
+        "name": "zy:net_up",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.down": {
+    "sounds": [
+      {
+        "name": "zy:net_down",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.surge": {
+    "sounds": [
+      {
+        "name": "zy:net_surge",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.hum": {
+    "sounds": [
+      {
+        "name": "zy:net_hum",
+        "volume": 0.4,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.backlash": {
+    "sounds": [
+      {
+        "name": "zy:net_backlash",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.burst": {
+    "sounds": [
+      {
+        "name": "zy:net_burst",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.spike": {
+    "sounds": [
+      {
+        "name": "zy:net_spike",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.warp": {
+    "sounds": [
+      {
+        "name": "zy:net_warp",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.anchor": {
+    "sounds": [
+      {
+        "name": "zy:net_anchor",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "net.boot": {
+    "sounds": [
+      {
+        "name": "zy:net_boot",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "oath.break": {
+    "sounds": [
+      {
+        "name": "zy:oath_break",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "tier.up": {
+    "sounds": [
+      {
+        "name": "zy:tier_up",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "alert.glitch": {
+    "sounds": [
+      {
+        "name": "zy:glitch_001",
+        "volume": 0.9,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:glitch_003",
+        "volume": 0.9,
+        "pitch": 1.0
+      },
+      {
+        "name": "zy:glitch_004",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "alert.critical": {
+    "sounds": [
+      {
+        "name": "zy:alert_critical",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "alert.drift": {
+    "sounds": [
+      {
+        "name": "zy:alert_drift",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "alert.intrusion": {
+    "sounds": [
+      {
+        "name": "zy:alert_intrusion",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "console.open": {
+    "sounds": [
+      {
+        "name": "zy:console_open",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "console.close": {
+    "sounds": [
+      {
+        "name": "zy:console_close",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "ui.page": {
+    "sounds": [
+      {
+        "name": "zy:open_004",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "emitter.fire": {
+    "sounds": [
+      {
+        "name": "zy:emitter_fire",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "emitter.ready": {
+    "sounds": [
+      {
+        "name": "zy:emitter_ready",
+        "volume": 0.6,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "emitter.hit": {
+    "sounds": [
+      {
+        "name": "zy:emitter_hit",
+        "volume": 0.9,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "sigilite.find": {
+    "sounds": [
+      {
+        "name": "zy:sigilite_find",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-![ZyoN](assets/icon.png)
+![ZyoN](assets/banner.gif)
 
 # ZyoN · The Pactbound
 

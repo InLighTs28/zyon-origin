@@ -1,0 +1,46 @@
+{
+  "type": "apoli:multiple",
+  "name": {
+    "translate": "zy.power.sigilite.name",
+    "fallback": "§dSigilite Sense"
+  },
+  "description": {
+    "translate": "zy.power.sigilite.desc",
+    "fallback": "§7Deepslate ores hide shards of crystallised network memory. Only you can pull them out."
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.sigilite",
+        "fallback": "§d§lSIGILITE\n§fDeepslate ore §8→ §78 % shard (modded deepslate ores too)\n§fAmethyst cluster §8→ §78 %\n§fAncient debris §8→ §71 shard, 50 % a second\n§fUse §8→ §7crafts and upgrades the Link Emitter"
+      }
+    }
+  ],
+  "ores": {
+    "type": "apoli:action_on_block_break",
+    "only_when_harvested": true,
+    "block_condition": {
+      "type": "apoli:in_tag",
+      "tag": "zy:sigilite_sources"
+    },
+    "block_action": {
+      "type": "apoli:execute_command",
+      "command": "function zy:sigilite/ore"
+    }
+  },
+  "debris": {
+    "type": "apoli:action_on_block_break",
+    "only_when_harvested": true,
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:ancient_debris"
+    },
+    "block_action": {
+      "type": "apoli:execute_command",
+      "command": "function zy:sigilite/debris"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "apoli:modify_damage_dealt",
+  "name": {
+    "translate": "zy.power.close.name",
+    "fallback": "§cShort Signal"
+  },
+  "description": {
+    "translate": "zy.power.close.desc",
+    "fallback": "§7Your signal frays with distance. §fArrows, tridents, thrown weapons and spells §7(vanilla or modded) deal §c40 % less damage§7. Get close: the network is woven by touch."
+  },
+  "damage_condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:in_tag",
+        "tag": "zy:ranged_or_spell"
+      },
+      {
+        "type": "apoli:in_tag",
+        "tag": "zy:seal",
+        "inverted": true
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": -0.4
+  }
+}

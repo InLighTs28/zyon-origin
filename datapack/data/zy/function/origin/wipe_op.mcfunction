@@ -110,3 +110,9 @@ scoreboard players reset @s zy.qtr
 scoreboard players reset @s zy.qbl
 scoreboard players reset @s zy.qbr
 scoreboard players reset @s zy.qfx
+scoreboard players reset @s zy.etier
+scoreboard players reset @s zy.epk
+scoreboard players reset @s zy.ecd
+scoreboard players reset @s zy.ehit
+scoreboard players reset @s zy.qemit
+scoreboard players reset @s zy.use

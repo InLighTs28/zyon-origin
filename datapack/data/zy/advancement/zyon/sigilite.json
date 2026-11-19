@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:debug_stick",
+      "components": {
+        "minecraft:custom_model_data": 7300,
+        "minecraft:enchantment_glint_override": false
+      }
+    },
+    "title": {
+      "translate": "zy.adv.sigilite.t",
+      "fallback": "Crystallised Memory"
+    },
+    "description": {
+      "translate": "zy.adv.sigilite.d",
+      "fallback": "Pull a Sigilite shard out of the deep. Link Emitter recipes unlocked."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:debug_stick",
+            "predicates": {
+              "minecraft:custom_data": "{zy:{shard:1}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "zy:emitter_1",
+      "zy:emitter_2",
+      "zy:emitter_3",
+      "zy:emitter_4"
+    ]
+  },
+  "parent": "zy:zyon/root"
+}

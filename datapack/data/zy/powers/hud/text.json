@@ -7664,6 +7664,99 @@
                 }
               ]
             }
+          },
+          {
+            "text": {
+              "translate": "zy.hud.note.msg.emit_charge",
+              "fallback": "CHARGE YOUR HAND FIRST",
+              "color": "#ff5a5a",
+              "font": "zy:term"
+            },
+            "condition": {
+              "type": "apoli:and",
+              "conditions": [
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.note",
+                  "comparison": "==",
+                  "compare_to": 90
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.msg",
+                  "comparison": ">=",
+                  "compare_to": 1
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.con",
+                  "comparison": "<=",
+                  "compare_to": 0
+                }
+              ]
+            }
+          },
+          {
+            "text": {
+              "translate": "zy.hud.note.msg.emit_empty",
+              "fallback": "NO PACKET LEFT · RECHARGING",
+              "color": "#ff5a5a",
+              "font": "zy:term"
+            },
+            "condition": {
+              "type": "apoli:and",
+              "conditions": [
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.note",
+                  "comparison": "==",
+                  "compare_to": 91
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.msg",
+                  "comparison": ">=",
+                  "compare_to": 1
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.con",
+                  "comparison": "<=",
+                  "compare_to": 0
+                }
+              ]
+            }
+          },
+          {
+            "text": {
+              "translate": "zy.hud.note.msg.emit_flux",
+              "fallback": "FLUX TOO LOW TO EMIT",
+              "color": "#ff5a5a",
+              "font": "zy:term"
+            },
+            "condition": {
+              "type": "apoli:and",
+              "conditions": [
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.note",
+                  "comparison": "==",
+                  "compare_to": 92
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.msg",
+                  "comparison": ">=",
+                  "compare_to": 1
+                },
+                {
+                  "type": "apoli:scoreboard",
+                  "objective": "zy.con",
+                  "comparison": "<=",
+                  "compare_to": 0
+                }
+              ]
+            }
           }
         ],
         "fadein": 0,

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#minecraft:replaceable",
+    "#minecraft:flowers",
+    "#minecraft:saplings",
+    "minecraft:light",
+    "#minecraft:wool_carpets",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch"
+  ]
+}

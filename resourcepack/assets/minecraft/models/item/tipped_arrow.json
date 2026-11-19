@@ -82,6 +82,12 @@
         "custom_model_data": 7150
       },
       "model": "zy:item/origin_frame"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7320
+      },
+      "model": "zy:item/packet"
     }
   ]
 }

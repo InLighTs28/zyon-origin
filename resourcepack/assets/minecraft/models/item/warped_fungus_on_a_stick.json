@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/warped_fungus_on_a_stick"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 7311
+      },
+      "model": "zy:item/emitter/mk1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7312
+      },
+      "model": "zy:item/emitter/mk2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7313
+      },
+      "model": "zy:item/emitter/mk3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7314
+      },
+      "model": "zy:item/emitter/mk4"
+    }
+  ]
+}

@@ -16,4 +16,5 @@ scoreboard players remove @s[scores={zy.msg=1..}] zy.msg 1
 scoreboard players remove @s[scores={zy.pulsecd=1..}] zy.pulsecd 1
 scoreboard players remove @s[scores={zy.esskeep=1..}] zy.esskeep 1
 function zy:hud/chrono
+function zy:emitter/tick
 function zy:core/end
