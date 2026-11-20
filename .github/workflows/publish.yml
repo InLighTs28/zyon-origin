@@ -25,9 +25,8 @@ jobs:
       TAG: ${{ github.event.release.tag_name || inputs.tag }}
       GH_TOKEN: ${{ github.token }}
     steps:
+      # scripts and changelogs from the default branch (the files themselves come from the release)
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.release.tag_name || inputs.tag }}
       - name: Download release files
         run: gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern "*.zip" --pattern "*.jar" --dir dist
       - name: Upload
