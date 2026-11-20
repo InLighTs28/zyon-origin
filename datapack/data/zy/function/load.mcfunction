@@ -88,6 +88,7 @@ scoreboard objectives add zy.view dummy
 scoreboard objectives add zy.hpcd dummy
 scoreboard objectives add zy.hrdy dummy
 scoreboard objectives add zy.leave dummy
+scoreboard objectives add zy.conpg dummy
 scoreboard objectives add zy.use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add zy.qemit dummy
 scoreboard objectives add zy.pstep dummy

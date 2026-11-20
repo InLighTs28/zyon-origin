@@ -1,0 +1,10 @@
+execute if score @s zy.conpg matches 0 run return run function zy:panel/page/siphon
+execute if score @s zy.conpg matches 1 run return run function zy:panel/page/life
+execute if score @s zy.conpg matches 2 run return run function zy:panel/page/relay
+execute if score @s zy.conpg matches 3 run return run function zy:panel/page/momentum
+execute if score @s zy.conpg matches 4 run return run function zy:panel/page/alteration
+execute if score @s zy.conpg matches 5 run return run function zy:panel/page/erase
+execute if score @s zy.conpg matches 6 run return run function zy:panel/page/essence
+execute if score @s zy.conpg matches 7 run return run function zy:panel/page/anchor
+execute if score @s zy.conpg matches 8 run return run function zy:panel/page/reveal
+execute if score @s zy.conpg matches 20 run return run function zy:panel/page/net

@@ -29,7 +29,7 @@
       "fallback": "origins:textures/gui/badge/isaacfanta/active.png",
       "text": {
         "translate": "zy.badge.console.key",
-        "fallback": "§b§lCONTROLS\n§f3rd key, tap §8→ §7Siphon ⇄ last seal\n§f3rd key, hold §8→ §7radial console\n§fWheel §8→ §7next / previous parameter\n§fTab §8→ §7cycle its value"
+        "fallback": "§b§lCONTROLS\n§f3rd key, tap §8→ §7Siphon ⇄ last seal\n§f3rd key, hold §8→ §7console: opens the panel of your seal in chat\n§fPress T, then click §8→ §7a value to route it, an icon to switch seal\n§f/trigger zy.cfg set 4 §8→ §7same panel, anytime\n§8Keys still work: wheel = parameter, Tab = value"
       }
     },
     {

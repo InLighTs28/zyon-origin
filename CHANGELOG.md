@@ -7,6 +7,12 @@ Format: one section per version, newest first. `DP` = datapack, `RP` = resource 
 
 ---
 
+## [Unreleased]
+
+### Console
+- **DP** New mouse console: hold the 3rd key (or `/trigger zy.cfg set 4`) to open a styled panel of your seal in chat. Press T and click a value to route it; seal icons switch channel. Locked seals show their tier. The keys still work.
+- **RP** Console fragments in the top bar are no longer framed like notifications.
+
 ## [1.0.0-beta.1] - 2026-11-18 · *Timers*
 
 First public beta.
