@@ -34,13 +34,14 @@ if [ -n "${CF_TOKEN:-}" ]; then
   CF_DP=$(jq -r '.curseforge.datapack_id // 0' $CFG)
   CF_RP=$(jq -r '.curseforge.resourcepack_id // 0' $CFG)
   CF_MOD=$(jq -r '.curseforge.mod_id // 0' $CFG)
-  [ "$CF_DP" != "0" ] && cf_upload "$CF_DP" "$DP" "$CL/datapack.md" "$NAME_DP" "$GV"
-  [ "$CF_RP" != "0" ] && cf_upload "$CF_RP" "$RP" "$CL/resourcepack.md" "$NAME_RP" "$GV"
-  if [ "$CF_MOD" != "0" ] && [ -f "$JAR" ]; then
-    # a mod file also needs the NeoForge loader entry: look its id up
-    NF=$(curl -sS --fail-with-body -A "$UA" -H "X-Api-Token: $CF_TOKEN" https://minecraft.curseforge.com/api/game/versions \
-         | jq '[.[] | select((.name | ascii_downcase) == "neoforge")][0].id')
-    cf_upload "$CF_MOD" "$JAR" "$CL_MOD" "$NAME_MOD" "$(jq -c --argjson nf "$NF" '.curseforge.game_version_ids + [$nf]' $CFG)"
+  if want dp && [ "$CF_DP" != "0" ]; then cf_upload "$CF_DP" "$DP" "$CL/datapack.md" "$NAME_DP" "$GV"; fi
+  if want rp && [ "$CF_RP" != "0" ]; then cf_upload "$CF_RP" "$RP" "$CL/resourcepack.md" "$NAME_RP" "$GV"; fi
+  if want mod && [ "$CF_MOD" != "0" ] && [ -f "$JAR" ]; then
+    # a mod file also needs the loader (NeoForge) and the environments (Client, Server)
+    VERS=$(curl -sS --fail-with-body -A "$UA" -H "X-Api-Token: $CF_TOKEN" https://minecraft.curseforge.com/api/game/versions)
+    EXTRA=$(echo "$VERS" | jq -c '[.[] | select((.name | ascii_downcase) as $n | $n == "neoforge" or $n == "client" or $n == "server") | .id] | unique')
+    echo "mod extra game versions: $EXTRA"
+    cf_upload "$CF_MOD" "$JAR" "$CL_MOD" "$NAME_MOD" "$(jq -c --argjson x "$EXTRA" '.curseforge.game_version_ids + $x' $CFG)"
   fi
   echo "CurseForge: done"
 else
