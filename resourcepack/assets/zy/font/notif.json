@@ -1,0 +1,73 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/lcap.png",
+      "height": 11,
+      "ascent": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/rcap.png",
+      "height": 11,
+      "ascent": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/alert.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/warn.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/info.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/net.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zy:font/notif/ok.png",
+      "height": 9,
+      "ascent": 8,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        " ": 3
+      }
+    }
+  ]
+}

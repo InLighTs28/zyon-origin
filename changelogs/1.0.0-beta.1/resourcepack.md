@@ -8,5 +8,7 @@ First public beta.
 - **No more overrides of other mods' files**: removed the copies of the Origins selection-screen textures, and the seal ring models moved off `leather_horse_armor` (it was shared with other packs).
 - **Sigilite Shard** (animated) and **Link Emitter** 3D models for its 4 tiers, with an animated sigil core; seal packet in flight.
 - New sounds: emitter shot, packet ready, impact, shard found.
+- Framed notifications with icons.
+- Lore names rewritten (all original).
 
 Requires the **ZyoN** datapack of the same version.

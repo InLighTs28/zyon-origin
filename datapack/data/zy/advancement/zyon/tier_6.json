@@ -9,7 +9,7 @@
     },
     "description": {
       "translate": "zy.adv.tier_6.d",
-      "fallback": "Tier 6 · The Legion's Spikes drain a planet's radianite. You make it flow."
+      "fallback": "Tier 6 · The Hollow Host's spires drain a planet's sigilite. You make it flow."
     },
     "frame": "task",
     "show_toast": true,

@@ -22,6 +22,12 @@ First public beta.
 - **DP** Short Signal: ranged and spell damage dealt by ZyoN -40 %.
 - **RP** Shard and Emitter models/textures (animated), packet, 4 new sounds.
 
+### Multiplayer & balance
+- **DP** Sealing another player requires consent (crouching); sealed players crouch 4 s to break free; `/function zy:admin/pvp_on` for PvP servers.
+- **DP** Sigilite: no shard with Silk Touch, amethyst clusters 3 %.
+- **DP** Erase: erased beings cannot sprint (mobs slowed); upkeep 0.6 Flux/s per bearer.
+- **RP** Framed notifications with category icons; lore names rewritten (original).
+
 ### Fixes
 - **DP** Alteration: effects carried by a bearer (potions, beacons, mobs...) are shared again. Since 1.21 they were never detected.
 

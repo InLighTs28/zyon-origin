@@ -5,11 +5,11 @@
     },
     "title": {
       "translate": "zy.adv.root.t",
-      "fallback": "ZYON // VP FILE Ø"
+      "fallback": "ZYON // PD FILE Ø"
     },
     "description": {
       "translate": "zy.adv.root.d",
-      "fallback": "Born during the First Light blackout without a single trace of radianite in his blood. The Protocol opened a file."
+      "fallback": "Born during the Null Dawn blackout without a single trace of sigilite in his blood. The Protocol opened a file."
     },
     "frame": "task",
     "show_toast": true,

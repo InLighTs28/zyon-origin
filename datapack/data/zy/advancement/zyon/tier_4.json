@@ -9,7 +9,7 @@
     },
     "description": {
       "translate": "zy.adv.tier_4.d",
-      "fallback": "Tier 4 · A VALORANT Protocol handler writes your name down: unclassified Radiant, inverse type."
+      "fallback": "Tier 4 · A Pact Directorate handler writes your name down: unclassified Conduit, inverse type."
     },
     "frame": "goal",
     "show_toast": true,

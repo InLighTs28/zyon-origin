@@ -1993,7 +1993,7 @@
   },
   "description": {
     "translate": "zy.power.place.desc",
-    "fallback": "§7Radianite circuit §binjected by contact§7. The target is indexed as a network node."
+    "fallback": "§7Sigilite circuit §binjected by contact§7. The target is indexed as a network node."
   },
   "badges": [
     {

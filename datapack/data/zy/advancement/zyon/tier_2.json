@@ -9,7 +9,7 @@
     },
     "description": {
       "translate": "zy.adv.tier_2.d",
-      "fallback": "Tier 2 · Kingdom's sensors log radianite that does not belong to you."
+      "fallback": "Tier 2 · Concord sensors log sigilite that does not belong to you."
     },
     "frame": "task",
     "show_toast": true,

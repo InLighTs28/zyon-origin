@@ -6,7 +6,7 @@
   },
   "description": {
     "translate": "zy.aug.jammer.d",
-    "fallback": "Hostiles lock onto your radianite signature every 30 s instead of 10 s."
+    "fallback": "Hostiles lock onto your sigilite signature every 30 s instead of 10 s."
   },
   "icon": {
     "texture": "zy:textures/gui/badge/warn.png",

@@ -5,7 +5,7 @@
   },
   "description": {
     "translate": "zy.tree.desc",
-    "fallback": "Points: 2 per Resonance tier, 1 per feat of your VP file."
+    "fallback": "Points: 2 per Resonance tier, 1 per feat of your PD file."
   },
   "icon": {
     "texture": "zy:textures/gui/origin/zyon.png",

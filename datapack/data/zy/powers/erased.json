@@ -141,5 +141,8 @@
       "operation": "add_multiplied_total",
       "amount": -1.0
     }
+  },
+  "no_sprint": {
+    "type": "apoli:prevent_sprinting"
   }
 }

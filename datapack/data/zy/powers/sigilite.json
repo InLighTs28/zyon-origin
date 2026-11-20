@@ -23,12 +23,33 @@
     "type": "apoli:action_on_block_break",
     "only_when_harvested": true,
     "block_condition": {
-      "type": "apoli:in_tag",
-      "tag": "zy:sigilite_sources"
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:in_tag",
+          "tag": "zy:sigilite_sources"
+        },
+        {
+          "type": "apoli:block",
+          "block": "minecraft:amethyst_cluster",
+          "inverted": true
+        }
+      ]
     },
     "block_action": {
       "type": "apoli:execute_command",
       "command": "function zy:sigilite/ore"
+    },
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "inverted": true,
+      "item_condition": {
+        "type": "apoli:enchantment",
+        "enchantment": "minecraft:silk_touch",
+        "comparison": ">=",
+        "compare_to": 1
+      }
     }
   },
   "debris": {
@@ -41,6 +62,40 @@
     "block_action": {
       "type": "apoli:execute_command",
       "command": "function zy:sigilite/debris"
+    },
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "inverted": true,
+      "item_condition": {
+        "type": "apoli:enchantment",
+        "enchantment": "minecraft:silk_touch",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "amethyst": {
+    "type": "apoli:action_on_block_break",
+    "only_when_harvested": true,
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "inverted": true,
+      "item_condition": {
+        "type": "apoli:enchantment",
+        "enchantment": "minecraft:silk_touch",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    },
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:amethyst_cluster"
+    },
+    "block_action": {
+      "type": "apoli:execute_command",
+      "command": "function zy:sigilite/amethyst"
     }
   }
 }

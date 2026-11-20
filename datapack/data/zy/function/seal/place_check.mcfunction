@@ -5,6 +5,7 @@ execute if score @s zy.lock matches 1.. unless score @s zy.sel matches 0 run ret
 function zy:seal/required
 execute if score @s zy.tier < #req zy.tmp run return run function zy:msg/locked_tier
 execute if entity @s[tag=zy.tgt] unless score @s zy.sel matches 1 unless score @s zy.sel matches 4 unless score @s zy.sel matches 5 run return run function zy:msg/not_self
+execute if entity @e[tag=zy.tgt,type=player,limit=1] unless entity @s[tag=zy.tgt] unless score #pvp zy.cfg matches 1 unless entity @e[tag=zy.tgt,type=player,predicate=zy:sneaking,limit=1] run return run function zy:msg/no_consent
 execute as @e[tag=zy.tgt,tag=zy.m,limit=1] unless score @s zy.owner = #o zy.tmp run return run function zy:msg/foreign
 execute if score @s zy.sel matches 0 if entity @e[tag=zy.tgt,scores={zy.drained=1..}] run return run function zy:msg/drained
 function zy:seal/has_it

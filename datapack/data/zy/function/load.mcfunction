@@ -87,6 +87,7 @@ scoreboard objectives add zy.ntot dummy
 scoreboard objectives add zy.view dummy
 scoreboard objectives add zy.hpcd dummy
 scoreboard objectives add zy.hrdy dummy
+scoreboard objectives add zy.leave dummy
 scoreboard objectives add zy.use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add zy.qemit dummy
 scoreboard objectives add zy.pstep dummy
@@ -167,3 +168,4 @@ kill @e[type=text_display,tag=zy.ring]
 team add zy.ghost
 team modify zy.ghost seeFriendlyInvisibles true
 execute as @e[tag=zy.m] unless score @s zy.owner matches 1.. run function zy:seal/clear
+execute unless score #pvp zy.cfg matches 0.. run scoreboard players set #pvp zy.cfg 0

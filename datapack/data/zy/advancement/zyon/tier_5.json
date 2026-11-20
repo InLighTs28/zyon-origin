@@ -9,7 +9,7 @@
     },
     "description": {
       "translate": "zy.adv.tier_5.d",
-      "fallback": "Tier 5 · On Omega Earth, another Zyon weaves the same network. You feel his seals through the mirror."
+      "fallback": "Tier 5 · On Mirror Earth, another Zyon weaves the same network. You feel his seals through the mirror."
     },
     "frame": "task",
     "show_toast": true,

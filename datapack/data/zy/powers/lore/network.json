@@ -26,6 +26,15 @@
         "translate": "zy.badge.net.dormant",
         "fallback": "§c§lDORMANT NODE\n§fOut of range §8→ §7dormant\n§fNot back in 30 s §8→ §7§ccollapse\n§fCollapse §8→ §7§cbacklash"
       }
+    },
+    {
+      "type": "origins:tooltip",
+      "sprite": "zy:textures/gui/badge/info.png",
+      "fallback": "origins:textures/gui/badge/isaacfanta/info.png",
+      "text": {
+        "translate": "zy.badge.network.mp",
+        "fallback": "§a§lMULTIPLAYER\n§fSealing another player §8→ §7they must be crouching (consent)\n§fSealed player §8→ §7crouch 4 s to break free\n§fServer PvP §8→ §7an op runs /function zy:admin/pvp_on\n§fSiphon §8→ §7each being can be drained once, then rests 3 min"
+      }
     }
   ]
 }

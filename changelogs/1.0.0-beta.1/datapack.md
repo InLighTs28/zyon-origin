@@ -23,6 +23,19 @@ Arcs empty clockwise and **blink** just before they run out. The HUD power's dia
 ### Short Signal
 - ZyoN's **ranged attacks and spells** (arrows, tridents, thrown weapons, vanilla or modded magic) deal **40 % less damage**. The network is woven up close.
 
+### Multiplayer
+- Sealing **another player** needs their **consent**: they must be crouching. They are told when a ZyoN tries.
+- A sealed player can **crouch 4 s to break free** at any time.
+- PvP servers: an operator can run `/function zy:admin/pvp_on` to drop the consent rule.
+- Sigilite cannot be farmed: **Silk Touch** gives no shard, amethyst clusters drop at 3 %.
+
+### Erase
+- Erased beings **cannot sprint** (mobs are slowed).
+- Staying erased is expensive: **0.6 Flux/s** per bearer (0.1 while suspended from the console).
+
+### Interface
+- Network notifications are framed, with an icon per kind (alert, warning, info, network, success).
+
 ### Fixes
 - **Alteration** now really shares effects between its bearers (they were never detected since Minecraft 1.21).
 

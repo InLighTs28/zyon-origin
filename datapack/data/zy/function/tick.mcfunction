@@ -3,6 +3,7 @@ scoreboard players operation #sw zy.tmp = #t zy.t
 scoreboard players operation #sw zy.tmp %= #k20 zy.tmp
 execute if score #sw zy.tmp matches 0 as @e[tag=zy.m] run function zy:core/sweep
 execute as @a[scores={zy.death=1..}] run function zy:core/death
+execute as @a[tag=zy.m] at @s run function zy:seal/leave_tick
 execute as @a[tag=zy.z] run function zy:core/heartbeat
 execute as @a[tag=zy.z] at @s run function zy:core/tick
 execute as @a[scores={zy.cfg=1..}] run function zy:cfg/run
