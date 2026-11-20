@@ -23,6 +23,9 @@ Arcs empty clockwise and **blink** just before they run out. The HUD power's dia
 ### Short Signal
 - ZyoN's **ranged attacks and spells** (arrows, tridents, thrown weapons, vanilla or modded magic) deal **40 % less damage**. The network is woven up close.
 
+### Fixes
+- **Alteration** now really shares effects between its bearers (they were never detected since Minecraft 1.21).
+
 ### Compatibility & performance
 - Seal rings now use their own item model base, so they no longer clash with other packs that retexture `leather_horse_armor` (rings already placed are converted automatically).
 - Rings that ride their bearer no longer scan every entity each tick.

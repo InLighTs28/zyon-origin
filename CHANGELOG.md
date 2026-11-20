@@ -22,6 +22,9 @@ First public beta.
 - **DP** Short Signal: ranged and spell damage dealt by ZyoN -40 %.
 - **RP** Shard and Emitter models/textures (animated), packet, 4 new sounds.
 
+### Fixes
+- **DP** Alteration: effects carried by a bearer (potions, beacons, mobs...) are shared again. Since 1.21 they were never detected.
+
 ### Sounds
 - **RP** Every sound effect re-made from scratch (original synthesis, mono for positional audio). Kenney samples no longer used.
 
