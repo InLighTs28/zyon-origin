@@ -12,6 +12,7 @@ UA="zyon-publisher/1.0 (GitHub Actions)"
 for f in "$DP" "$RP" "$CL/datapack.md" "$CL/resourcepack.md"; do
   [ -f "$f" ] || { echo "::error::missing $f"; exit 1; }
 done
+want() { [ -z "${ONLY:-}" ] || [ "$ONLY" = "$1" ]; }   # ONLY=dp|rp|mod re-sends a single file
 CL_MOD="$CL/mod.md"; [ -f "$CL_MOD" ] || CL_MOD="$CL/datapack.md"
 RT=$(jq -r '.release_type // "release"' $CFG)   # release | beta | alpha
 NAME_DP="$(jq -r .names.datapack $CFG) $VER"
@@ -66,9 +67,9 @@ mr_upload() { # project_id file changelog name loaders_json deps_json
 }
 DEPS='[]'
 [ -n "$MR_RP" ] && DEPS=$(jq -n --arg p "$MR_RP" '[{project_id: $p, dependency_type: "required"}]')
-if [ -n "$MR_DP" ]; then mr_upload "$MR_DP" "$DP" "$CL/datapack.md" "$NAME_DP" '["datapack"]' "$DEPS"; fi
-if [ -n "$MR_RP" ]; then mr_upload "$MR_RP" "$RP" "$CL/resourcepack.md" "$NAME_RP" '["minecraft"]' '[]'; fi
-if [ -n "$MR_MOD" ] && [ -f "$JAR" ]; then mr_upload "$MR_MOD" "$JAR" "$CL_MOD" "$NAME_MOD" '["neoforge"]' '[]'; fi
+if want dp && [ -n "$MR_DP" ]; then mr_upload "$MR_DP" "$DP" "$CL/datapack.md" "$NAME_DP" '["datapack"]' "$DEPS"; fi
+if want rp && [ -n "$MR_RP" ]; then mr_upload "$MR_RP" "$RP" "$CL/resourcepack.md" "$NAME_RP" '["minecraft"]' '[]'; fi
+if want mod && [ -n "$MR_MOD" ] && [ -f "$JAR" ]; then mr_upload "$MR_MOD" "$JAR" "$CL_MOD" "$NAME_MOD" '["neoforge"]' '[]'; fi
 # projects created as drafts: send them to Modrinth review once they have a version
 for P in "$MR_DP" "$MR_RP" "$MR_MOD"; do
   [ -n "$P" ] || continue

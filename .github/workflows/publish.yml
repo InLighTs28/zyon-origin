@@ -10,6 +10,10 @@ on:
       tag:
         description: "Release tag to publish (e.g. v1.0.0-beta.1)"
         required: true
+      only:
+        description: "Only one file: dp, rp or mod (empty = all)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -30,4 +34,5 @@ jobs:
         env:
           CF_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
           MR_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          ONLY: ${{ inputs.only }}
         run: bash .github/scripts/publish.sh
