@@ -2,20 +2,26 @@
   "game_version": "1.21.1",
   "release_type": "beta",
   "curseforge": {
-    "datapack_id": 0,
-    "resourcepack_id": 0,
-    "game_version_ids": [11779]
+    "datapack_id": 1817680,
+    "resourcepack_id": 1817809,
+    "game_version_ids": [
+      11779
+    ],
+    "mod_id": 1817855
   },
   "modrinth": {
     "datapack_id": "",
-    "resourcepack_id": ""
+    "resourcepack_id": "",
+    "mod_id": ""
   },
   "names": {
     "datapack": "ZyoN",
-    "resourcepack": "ZyoN - Resources"
+    "resourcepack": "ZyoN - Resources",
+    "mod": "ZyoN"
   },
   "files": {
     "datapack": "ZyoN-Datapack",
-    "resourcepack": "ZyoN-ResourcePack"
+    "resourcepack": "ZyoN-ResourcePack",
+    "mod": "ZyoN-NeoForge"
   }
 }

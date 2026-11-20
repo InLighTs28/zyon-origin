@@ -1,0 +1,25 @@
+# One-off: creates the Modrinth projects (drafts) and commits their ids into .github/publish.json.
+name: Create Modrinth projects
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create projects
+        env:
+          MR_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+        run: bash .github/scripts/modrinth_create.sh
+      - name: Commit ids
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/publish.json
+          git diff --cached --quiet || git commit -m "Modrinth project ids"
+          git push
