@@ -29,7 +29,7 @@ cf_upload() { # project_id file changelog display_name game_versions_json
     "https://minecraft.curseforge.com/api/projects/$1/upload-file"
   echo
 }
-if [ -n "${CF_TOKEN:-}" ]; then
+if [ "${SITE:-}" = "mr" ]; then echo "CurseForge skipped (SITE=mr)"; elif [ -n "${CF_TOKEN:-}" ]; then
   GV=$(jq -c .curseforge.game_version_ids $CFG)
   CF_DP=$(jq -r '.curseforge.datapack_id // 0' $CFG)
   CF_RP=$(jq -r '.curseforge.resourcepack_id // 0' $CFG)
@@ -49,6 +49,7 @@ else
 fi
 
 # ---------- Modrinth ----------
+if [ "${SITE:-}" = "cf" ]; then echo "Modrinth skipped (SITE=cf)"; exit 0; fi
 if [ -z "${MR_TOKEN:-}" ]; then
   echo "::warning::MODRINTH_TOKEN not set, Modrinth skipped"; exit 0
 fi

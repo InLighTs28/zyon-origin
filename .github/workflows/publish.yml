@@ -14,6 +14,10 @@ on:
         description: "Only one file: dp, rp or mod (empty = all)"
         required: false
         default: ""
+      site:
+        description: "Only one site: cf or mr (empty = both)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -34,4 +38,5 @@ jobs:
           CF_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
           MR_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
           ONLY: ${{ inputs.only }}
+          SITE: ${{ inputs.site }}
         run: bash .github/scripts/publish.sh
