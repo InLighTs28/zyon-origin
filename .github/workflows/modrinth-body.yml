@@ -1,0 +1,21 @@
+# Updates the Modrinth project descriptions (and re-hosts their banner on Modrinth).
+name: Update Modrinth descriptions
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/modrinth/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  body:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync descriptions
+        env:
+          MR_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+        run: bash .github/scripts/modrinth_body.sh
